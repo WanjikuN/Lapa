@@ -126,7 +126,54 @@ font-family: 'poppins';
   background-color: #333;
   margin: 4px 0;
 }
+#approach {
+  /* border: 1px solid red; */
+  width: 55vw;
+  height: 35vh;
+  position: relative;
+  top: -15%; /* Position 90% from the top */
+  left: 50%; /* Start positioning from the middle */
+  transform: translateX(-50%); /* Shift back by half its width for true centering */
+  z-index: 1;
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+}
+.approach-card-one{
+ /* border: 2px solid red; */
+ height: 140px;
+ width: 100%;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding: 10px 0px;
+}
 
+.approach-card-one img{
+  height: 80%;
+  border: 1px dashed #c58a7e;
+  border-radius: 50%;
+}
+.approach-card-one h3{
+font-family: 'sans-serif';
+font-size: 14px;
+  color: #ed8e1c;
+
+}
+.approach-card {
+  width: 23%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* border: 1px solid red; */
+}
+.approach-card p{
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 /* Responsive navbar for smaller screens */
 @media (max-width: 768px) {
   #navbar {
