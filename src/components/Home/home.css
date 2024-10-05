@@ -147,20 +147,20 @@ font-family: 'poppins';
 }
 .approach-card-one{
  /* border: 2px solid red; */
- height: 140px;
+ height: 40%;
  width: 100%;
  overflow: hidden;
  display: flex;
  align-items: center;
- justify-content: center;
  flex-direction: column;
- padding: 10px 0px;
+ padding: 1px 0px 0px 0px;
 }
 
 .approach-card-one img{
-  height: 70%;
+  height: 60%;
   border: 1px dashed #c58a7e;
   border-radius: 50%;
+  /* margin-top: 18px; */
 }
 .approach-card-one h3{
 font-family: 'sans-serif';
