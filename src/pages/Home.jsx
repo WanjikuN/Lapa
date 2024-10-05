@@ -13,7 +13,7 @@ const Home = () =>{
       <Navbar />
       <HeroSection />
       <Approach />
-      <Approach2 />
+      {/* <Approach2 /> */}
     </div>
   );
 }

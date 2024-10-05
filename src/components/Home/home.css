@@ -2,13 +2,15 @@
   height: 100vh;
   background-image: url(../../assets/images/hero-home.png), url(../../assets/images/bg.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
+  background-position: center, bottom;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative; /* Make sure relative positioning is used for internal positioning */
   text-align: center; /* Center text */
     z-index: 1;
+    /* border:10px solid red; */
+    /* overflow: scroll; */
 
 }
 .three{
@@ -23,23 +25,23 @@
 }
 #hero-section h2{
   position: absolute;
-  top: 12%; /* Position the content 40% from the top */
+  top: 8%; /* Position the content 40% from the top */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust for true centering */
   color: white; /* Text color, adjust as needed */
   font-family: 'Source_sans_pro'
 }
 #hero-section p {
+  font-size: 24px;
   color: #c58a7e;
   font-weight: bold;
 font-family: 'poppins';
    position: absolute;
-  top: 20%; /* Position the content 40% from the top */
+  top: 17%; /* Position the content 40% from the top */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust for true centering */
 }
 
-/* Optional: For better spacing between header and paragraph */
 #hero-section h2 {
   margin-bottom: 10px;
   font-size: 54px;
@@ -48,7 +50,11 @@ font-family: 'poppins';
 #hero-section p {
   font-size: 18px;
 }
-
+  /* Hide scroll bar */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
 
 
 /* Navbar container */
@@ -152,7 +158,7 @@ font-family: 'poppins';
 }
 
 .approach-card-one img{
-  height: 80%;
+  height: 70%;
   border: 1px dashed #c58a7e;
   border-radius: 50%;
 }
