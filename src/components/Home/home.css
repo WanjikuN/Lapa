@@ -130,7 +130,7 @@
   /* border: 1px solid red; */
 
   width: 100vw;
-  height: 75vh;
+  height: 90vh;
   position: relative;
   top: -350px;
   display: flex;
@@ -220,7 +220,6 @@ h1 {
   align-items: center;
   flex-direction: column;
   padding: 1px 0px 0px 0px;
-
 }
 
 .approach-card-one img {
@@ -241,7 +240,6 @@ h1 {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   /* border: 1px solid red; */
-  
 }
 .approach-card p {
   text-align: center;
@@ -356,7 +354,7 @@ h1 {
   /* overflow: hidden; Hide any overflow */
   width: 79.5%; /* Full width of the container */
   /* border: 1px solid red; */
-  height: 25vh;
+  height: 35vh;
   position: relative;
   top: -290px;
   overflow: hidden;
@@ -369,7 +367,7 @@ h1 {
 
 .partners-row {
   display: flex; /* Use flexbox for horizontal layout */
-  width: calc(200%); 
+  width: calc(200%);
   animation: scroll 30s linear infinite; /* Animation for scrolling */
 }
 
@@ -389,4 +387,69 @@ h1 {
   100% {
     transform: translateX(-50%); /* Move left by half the width of the row */
   }
+}
+#footer-home {
+  height: 65vh;
+  width: 100vw;
+  /* background-color: #581411; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  position: relative;
+  /* top: -290px; */
+  background-image: url(../../assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* transform: scaleY(-1); Flip the background image vertically */
+  pointer-events: none;
+}
+#news-letter{
+  /* border: 1px solid black; */
+   position: relative;
+  top: -390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#news-letter p {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ed8e1c;
+  font-family: "Source_sans_pro";
+  font-weight: 900;
+}
+
+.input-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.input-container input {
+  padding: 40px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.input-container button {
+  padding: 40px 50px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  background-color: #ed8e1c;
+  color: #581411;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.input-container button:hover{
+  background-color: #218838 !important;
+  cursor: pointer;
+}
+
+.input-container input:focus {
+  border-color: #80bdff;
 }

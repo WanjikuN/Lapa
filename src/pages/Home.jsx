@@ -6,6 +6,7 @@ import Approach from "../components/Home/Approach";
 import Approach2 from "../components/Home/Approach2";
 import Projects from "../components/Home/Projects";
 import OurPartners from "../components/Home/OurPartners";
+import FooterHome from "../components/Home/FooterHome";
 
 const Home = () =>{
   return (
@@ -18,6 +19,7 @@ const Home = () =>{
       <Approach2 />
       <Projects />
       <OurPartners />
+      <FooterHome />
     </div>
   );
 }
