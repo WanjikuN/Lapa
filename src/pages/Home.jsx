@@ -4,6 +4,7 @@ import HeroSection from "../components/Home/HeroSection";
 import Navbar from "../components/Home/Navbar";
 import Approach from "../components/Home/Approach";
 import Approach2 from "../components/Home/Approach2";
+import Projects from "../components/Home/Projects";
 
 const Home = () =>{
   return (
@@ -14,6 +15,7 @@ const Home = () =>{
       <HeroSection />
       <Approach />
       <Approach2 />
+      <Projects />
     </div>
   );
 }
