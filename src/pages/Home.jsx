@@ -4,6 +4,9 @@ import HeroSection from "../components/Home/HeroSection";
 import Navbar from "../components/Home/Navbar";
 import Approach from "../components/Home/Approach";
 import Approach2 from "../components/Home/Approach2";
+import Projects from "../components/Home/Projects";
+import OurPartners from "../components/Home/OurPartners";
+import FooterHome from "../components/Home/FooterHome";
 
 const Home = () =>{
   return (
@@ -13,7 +16,10 @@ const Home = () =>{
       <Navbar />
       <HeroSection />
       <Approach />
-      {/* <Approach2 /> */}
+      <Approach2 />
+      <Projects />
+      <OurPartners />
+      <FooterHome />
     </div>
   );
 }
