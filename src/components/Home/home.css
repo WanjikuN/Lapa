@@ -132,19 +132,94 @@ font-family: 'poppins';
   background-color: #333;
   margin: 4px 0;
 }
+#approach2 {
+  /* border: 1px solid red; */
+
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  top: -350px;
+  display: flex;
+  justify-content: center;
+  z-index: 0; /* Ensure it's behind #approach */
+}
+
+
+.bubble {
+
+  /* border: 1px solid red; */
+
+  background-color: rgb(255, 255, 255);
+  color:black;
+  /* padding: 20px; */
+  margin: 15% 18px 18px 0px; /* Add space between the bubbles */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a bubble effect */
+  width: 44%;
+  height: auto; /* Adjust the height if needed */
+--g: #0000 98%,#000;
+--r: 50px;
+mask:
+  radial-gradient(var(--r) at 0    0   ,var(--g)) 0    0,
+  radial-gradient(var(--r) at 100% 0   ,var(--g)) 100% 0,
+  radial-gradient(var(--r) at 0    100%,var(--g)) 0    100%,
+  radial-gradient(var(--r) at 100% 100%,var(--g)) 100% 100%;
+mask-size: 51% 51%;
+mask-repeat: no-repeat;
+  /* Clip-path to create a rounded pentagon */
+ /* clip-path: ellipse(100% 50% at 10% 20%); */
+  /* clip-path: inset(0% 45% 0% 45% 0 round 10px); */
+  /* z-index: 0; */
+}
+
+.bubble-cont{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  height: 70%;
+  padding: 70px 180px;
+}
+.bubble-cont p{
+  font-size: 18px;
+  /* font-weight: bold; */
+  /* color: #581411; */
+  font-family: "poppins";
+}
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family :cursive;
+  border-bottom: 1px dashed #c58a7e;
+}
+#approach2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transform: scaleY(-1); /* Flip the background image vertically */
+  pointer-events: none;
+  z-index: -1; /* Background image stays behind the #approach2 content */
+}
+
 #approach {
   /* border: 1px solid red; */
   width: 55vw;
   height: 35vh;
   position: relative;
-  top: -15%; /* Position 90% from the top */
-  left: 50%; /* Start positioning from the middle */
-  transform: translateX(-50%); /* Shift back by half its width for true centering */
-  z-index: 1;
-  /* background-color: white; */
+  top: -15%; /* Positioning to move it up */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Shift back for centering */
+  z-index: 2; /* Ensure it appears on top of #approach2 */
   display: flex;
   justify-content: space-between;
 }
+
 .approach-card-one{
  /* border: 2px solid red; */
  height: 40%;
