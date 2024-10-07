@@ -307,7 +307,7 @@ h1 {
   align-items: center;
   justify-content: flex-start;
 }
-
+#our-partners h2,
 #projects h2 {
   color: #000;
   font-size: 44px;
@@ -351,4 +351,42 @@ h1 {
 .projects-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.438);
   cursor: pointer;
+}
+#our-partners {
+  /* overflow: hidden; Hide any overflow */
+  width: 79.5%; /* Full width of the container */
+  /* border: 1px solid red; */
+  height: 25vh;
+  position: relative;
+  top: -290px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10%;
+  flex-direction: column;
+}
+
+.partners-row {
+  display: flex; /* Use flexbox for horizontal layout */
+  width: calc(200%); 
+  animation: scroll 30s linear infinite; /* Animation for scrolling */
+}
+
+.partners-row img {
+  margin: 0 20px; /* Add some spacing between images */
+  height: 100px; /* Set a fixed height for images */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+.partners-row img:hover {
+  transform: scale(1.1); /* Slightly scale the image on hover for emphasis */
+}
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the beginning of the first image */
+  }
+  100% {
+    transform: translateX(-50%); /* Move left by half the width of the row */
+  }
 }

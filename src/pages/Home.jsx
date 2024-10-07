@@ -5,6 +5,7 @@ import Navbar from "../components/Home/Navbar";
 import Approach from "../components/Home/Approach";
 import Approach2 from "../components/Home/Approach2";
 import Projects from "../components/Home/Projects";
+import OurPartners from "../components/Home/OurPartners";
 
 const Home = () =>{
   return (
@@ -16,6 +17,7 @@ const Home = () =>{
       <Approach />
       <Approach2 />
       <Projects />
+      <OurPartners />
     </div>
   );
 }
