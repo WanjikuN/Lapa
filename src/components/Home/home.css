@@ -61,13 +61,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
-  padding: 10px 40px;
-  background-color: rgba(255, 255, 255, 0);
+  height: 5vh;
+  padding: 1% 4.5vw;
+  background-color: rgb(255, 255, 255);
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   position: fixed;
   top: 0;
-  width: 91.6vw;
+  /* width: 91.6vw; */
+  width: 91vw;
   z-index: 1000;
 }
 
@@ -79,6 +80,7 @@
 #navbar .logo img {
   height: 90px;
   width: auto;
+  margin-top: 5px;
 }
 
 /* Navigation links */
@@ -88,6 +90,7 @@
   align-items: center;
   overflow: hidden;
   width: 450px;
+  margin-right:1.5vw ;
 }
 
 #navbar .nav-links ul {
