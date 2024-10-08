@@ -6,7 +6,8 @@ body{
 #home{
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
+  overflow: hidden !important;
+  /* overflow: hidden !important; */
   /* border: 10px solid red; */
   
     /* border: 1px solid red; */
