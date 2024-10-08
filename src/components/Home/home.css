@@ -869,7 +869,7 @@
     z-index: 1000;
   }
   #home {
-    height: 530vh;
+    height: 528vh;
     width: 100vw;
     overflow: hidden !important;
   }
@@ -923,7 +923,7 @@
     width: 100vw;
     height: 90vh;
     position: relative;
-    top: -670px !important;
+    top: -680px !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -962,7 +962,7 @@
   .approach-card-one {
     height: 50% !important;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1106,7 +1106,7 @@
     /* border: 1px solid red; */
     height: 35vh;
     position: relative;
-    top: 650px !important;
+    top: 700px !important;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1149,7 +1149,7 @@
   #news-letter {
     /* border: 1px solid black; */
     position: relative;
-    top: -80px !important;
+    top: -50px !important;
     /* left: 320px; */
     display: flex;
     flex-direction: column;
