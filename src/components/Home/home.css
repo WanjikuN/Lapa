@@ -1284,7 +1284,7 @@
     /* border: 1px solid red !important; */
   }
   #home {
-    height: 528vh;
+    height: 556vh !important;
     width: 100vw;
     overflow: hidden !important;
   }
@@ -1338,7 +1338,7 @@
     width: 100vw;
     height: 90vh;
     position: relative;
-    top: -680px !important;
+    top: -620px !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1364,7 +1364,7 @@
     width: 90vw !important;
     height: 85vh !important;
     position: relative;
-    top: 110vh !important;
+    top: 120vh !important;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -1375,9 +1375,8 @@
   }
 
   .approach-card-one {
-    height: 50% !important;
+    height: 60% !important;
     width: 100%;
-    /* overflow: hidden; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1405,7 +1404,7 @@
   .approach-card p {
     text-align: center;
     font-family: Arial, sans-serif;
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .bubble {
     /* border: 1px solid red; */
@@ -1430,7 +1429,7 @@
     /* clip-path: inset(0% 45% 0% 45% 0 round 10px); */
     /* z-index: 0; */
     position: relative;
-    top: 15%;
+    top: 120px !important;
   }
 
   .bubble-cont {
@@ -1460,7 +1459,7 @@
     width: 100vw !important;
     position: relative;
 
-    top: 190px !important;
+    top: 270px !important;
     display: flex;
     flex-direction: column !important;
 
@@ -1474,7 +1473,7 @@
     color: #581411;
     font-family: "Source_sans_pro";
     /* border-bottom: 1px dashed #c58a7e; */
-    margin-bottom: 40px;
+    margin-bottom: 10px !important;
   }
   #projects-cards {
     /* border: 1px solid red; */
@@ -1521,7 +1520,7 @@
     /* border: 1px solid red; */
     height: 35vh;
     position: relative;
-    top: 700px !important;
+    top: 850px !important;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1559,7 +1558,7 @@
     /* transform: scaleY(-1); Flip the background image vertically */
     /* pointer-events: none; */
     position: relative;
-    top: 700px;
+    top: 900px;
   }
   #news-letter {
     /* border: 1px solid black; */
