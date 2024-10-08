@@ -18,7 +18,7 @@ const FooterHome = () => {
         <div id="footer-links">
           <div>
             <p>Lawyers for Animal Protection</p>
-            <img width="250px" src="./lapa-logo.png" alt="LAPA Logo" />
+            <img src="./lapa-logo.png" alt="LAPA Logo" />
           </div>
 
           <div id="social-links">
@@ -55,9 +55,9 @@ const FooterHome = () => {
 
           <div id="contacts">
             <p>Contact Us</p>
-            <h6>Email: info@lapafrica.org</h6>
-            <h6>Phone: +254 123 456 789</h6>
-            <h6>Address: Nairobi, Kenya</h6>
+            <h6> info@lapafrica.org</h6>
+            <h6> +254 123 456 789</h6>
+            <h6> Nairobi, Kenya</h6>
           </div>
         </div>
 
