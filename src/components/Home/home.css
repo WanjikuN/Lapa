@@ -1,32 +1,13 @@
-@media (min-width: 1531px) {
+@media (min-width: 1431px) {
   /* Large screen */
-  #home {
-    height: 380vh;
-    width: 100vw;
-    overflow: hidden !important;
-    /* overflow: hidden !important; */
-    /* border: 10px solid red; */
 
-    /* border: 1px solid red; */
-  }
-  #approach {
-  /* border: 1px solid red; */
-  width: 55vw;
-  height: 35vh;
-  position: relative;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-}
+
 #footer-links img {
     width: 270px;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1530px) {
+@media (min-width: 769px) and (max-width: 1430px) {
   /* small screen */
   #home {
     height: 340vh;
@@ -1756,7 +1737,7 @@
   width: 50%;
 }
 #navbar .logo img {
-  height: 90px;
+  height: 69px;
   width: auto;
   margin-top: 5px;
 }
@@ -1807,13 +1788,34 @@
   background-color: #333;
   margin: 4px 0;
 }
+#approach {
+  /* border: 1px solid red; */
+  width: 88vw !important;
+  height: 35vh;
+  position: relative;
+  /* top: -150px; */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between !important;
+}
 #approach2 {
   /* border: 1px solid red; */
 
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   position: relative;
-  top: -350px;
+  /* top: -350px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2; /* Ensure it's behind #approach */
+}
+#approach2 div {
+  /* border: 1px solid red; */
+  position: relative;
+  /* top: -350px; */
   display: flex;
   justify-content: center;
   z-index: 0; /* Ensure it's behind #approach */
@@ -1825,10 +1827,10 @@
   background-color: rgb(255, 255, 255);
   color: black;
   /* padding: 20px; */
-  margin: 15% 18px 18px 0px; /* Add space between the bubbles */
+  margin: 10% 18px 18px 0px; /* Add space between the bubbles */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a bubble effect */
   width: 44%;
-  height: auto; /* Adjust the height if needed */
+  height: 60%; /* Adjust the height if needed */
   --g: #0000 98%, #000;
   --r: 50px;
   mask: radial-gradient(var(--r) at 0 0, var(--g)) 0 0,
@@ -1878,13 +1880,15 @@ h1 {
 }
 
 .approach-card-one {
-  height: 40%;
+  height: 51%;
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 1px 0px 0px 0px;
+  /* border: 1px solid red; */
+
 }
 
 .approach-card-one img {
@@ -1903,10 +1907,15 @@ h1 {
   background-color: rgba(0, 0, 0, 0.596);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
 }
 .approach-card p {
   text-align: center;
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 49%;
 }
 /* Responsive navbar for smaller screens */
 @media (max-width: 768px) {
@@ -1957,11 +1966,11 @@ h1 {
 #projects {
   /* border: 1px solid red; */
   /* line-height: 0.2; */
-  height: 55vh;
+  height: 65vh;
   width: 100vw;
   position: relative;
 
-  top: -375px;
+  /* top: -375px; */
   display: flex;
   flex-direction: column;
 
@@ -2019,7 +2028,7 @@ h1 {
   /* border: 1px solid red; */
   height: 35vh;
   position: relative;
-  top: -290px;
+  /* top: -290px; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -2052,7 +2061,7 @@ h1 {
   }
 }
 #footer-home {
-  height: 65vh;
+  height: auto;
   width: 100vw;
   /* background-color: #581411; */
   color: white;
@@ -2060,7 +2069,7 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid black; */
+  /* border: 10px solid black; */
   /* position: relative; */
   /* top: -290px; */
   background-image: url(../../assets/images/bg.png);
@@ -2072,7 +2081,7 @@ h1 {
 #news-letter {
   /* border: 1px solid black; */
   position: relative;
-  top: -200px;
+  /* top: -200px; */
   /* left: 320px; */
   display: flex;
   flex-direction: column;
@@ -2092,7 +2101,7 @@ h1 {
 }
 
 .input-container input {
-  padding: 40px;
+  padding: 20px;
   font-size: 20px;
   border: 1px solid #ccc;
   border-right: none;
@@ -2101,7 +2110,7 @@ h1 {
 }
 
 .input-container button {
-  padding: 40px 50px;
+  padding: 20px 30px;
   font-size: 20px;
   border: 1px solid #ccc;
   background-color: #ed8e1c;
@@ -2139,7 +2148,7 @@ h1 {
   /* border: 1px solid red; */
   /* height: 100%; */
   position: relative;
-  top: -150px;
+  /* top: -150px; */
   width: 89vw;
   display: flex;
   justify-content: space-between;
