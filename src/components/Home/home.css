@@ -1,15 +1,14 @@
 @media (min-width: 1201px) {
   /* Large screen */
 
-
-#footer-links img {
-    width: 200px ;
+  #footer-links img {
+    width: 200px;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   /* small screen */
- 
+
   #navbar .logo img {
     height: 60px !important;
     width: auto;
@@ -411,11 +410,11 @@
     width: 92vw !important;
     z-index: 1000;
   }
-#navbar .logo img {
-  height: 60px !important;
-  width: auto;
-  margin-top: 5px;
-}
+  #navbar .logo img {
+    height: 60px !important;
+    width: auto;
+    margin-top: 5px;
+  }
 
   #hero-section {
     height: 100vh !important;
@@ -472,10 +471,9 @@
     flex-direction: column;
     z-index: 0; /* Ensure it's behind #approach */
   }
-  .approach2{
+  .approach2 {
     /* border: 5px solid red; */
     height: 50% !important;
-    
   }
   #approach2::after {
     content: "";
@@ -541,7 +539,6 @@
     align-items: center;
     justify-content: space-between;
     border: 1px solid #c58a7e !important;
-
   }
   .approach-card p {
     text-align: center;
@@ -888,7 +885,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .approach2{
+  .approach2 {
     /* border: 1px solid red; */
     height: 60% !important;
   }
@@ -956,7 +953,7 @@
     color: #ed8e1c;
   }
   .approach-card {
-       width: 100% !important;
+    width: 100% !important;
     height: 23% !important;
     background-color: rgba(0, 0, 0, 0.596);
     border-top-left-radius: 20px;
@@ -966,7 +963,6 @@
     justify-content: space-between;
     flex-direction: row !important;
     border: 1px solid #c58a7e !important;
-
   }
   .approach-card p {
     text-align: center;
@@ -1302,7 +1298,7 @@
 
 #hero-section h2 {
   margin-bottom: 10px;
-  font-size:46px;
+  font-size: 46px;
 }
 
 #hero-section p {
@@ -1390,7 +1386,7 @@
   width: 88vw !important;
   height: 40%;
   position: relative;
-  top:-20vh;
+  top: -20vh;
   /* top: -150px; */
   left: 50%;
   transform: translateX(-50%);
@@ -1419,16 +1415,16 @@
   justify-content: center;
   z-index: 0; /* Ensure it's behind #approach */
 }
-@media (min-width: 1201px)and (max-width: 1550px) {
+@media (min-width: 1201px) and (max-width: 1550px) {
   .bubble-cont {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  /* border: 1px solid red; */
-  height: 70%;
-  padding: 70px 80px !important;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: 70%;
+    padding: 70px 80px !important;
+  }
 }
 .bubble {
   /* border: 1px solid red; */
@@ -1472,6 +1468,7 @@ h1 {
   font-size: 24px;
   font-family: cursive;
   border-bottom: 1px dashed #c58a7e;
+  text-align: center !important;
 }
 #approach2::after {
   content: "";
@@ -1497,7 +1494,6 @@ h1 {
   flex-direction: column;
   padding: 1px 0px 0px 0px;
   /* border: 1px solid red; */
-
 }
 
 .approach-card-one img {
