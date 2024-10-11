@@ -4,7 +4,7 @@ const Approach2 = () => {
   return (
     <div id="approach2">
       <Approach />
-      <div>
+      <div className="approach2">
       <div class="bubble">
         <div className="bubble-cont">
           <p>
