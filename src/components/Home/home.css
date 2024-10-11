@@ -9,17 +9,9 @@
 
 @media (min-width: 769px) and (max-width: 1430px) {
   /* small screen */
-  #home {
-    height: 340vh;
-    width: 100vw;
-    overflow: hidden !important;
-    /* overflow: hidden !important; */
-    /* border: 10px solid red; */
-
-    /* border: 1px solid red; */
-  }
+ 
   #navbar .logo img {
-    height: 80px !important;
+    height: 60px !important;
     width: auto;
     margin-top: 20px !important;
   }
@@ -78,7 +70,7 @@
     width: 100vw;
     height: 90vh;
     position: relative;
-    top: -350px;
+    /* top: -350px; */
     display: flex;
     justify-content: center;
     z-index: 0; /* Ensure it's behind #approach */
@@ -87,7 +79,7 @@
   .bubble {
     /* border: 1px solid red; */
     position: relative;
-    top: 120px;
+    /* top: 120px; */
     background-color: rgb(255, 255, 255);
     color: black;
     /* padding: 20px; */
@@ -148,7 +140,7 @@
     width: 88vw !important;
     height: 35vh;
     position: relative;
-    top: -130px !important;
+    /* top: -130px !important; */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -194,7 +186,7 @@
     width: 100vw;
     position: relative;
 
-    top: -390px !important;
+    /* top: -390px !important; */
     display: flex;
     flex-direction: column;
 
@@ -252,7 +244,7 @@
     /* border: 1px solid red; */
     height: 35vh;
     position: relative;
-    top: -400px !important;
+    /* top: -400px !important; */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -291,14 +283,14 @@
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
-    top: -360px;
+    /* top: -360px; */
     /* transform: scaleY(-1); Flip the background image vertically */
     /* pointer-events: none; */
   }
   #news-letter {
     /* border: 1px solid black; */
     position: relative;
-    top: -60px !important;
+    /* top: -60px !important; */
     /* left: 320px; */
     display: flex;
     flex-direction: column;
@@ -365,14 +357,14 @@
     /* border: 1px solid red; */
     /* height: 100%; */
     position: relative;
-    top: -150px;
+    /* top: -150px; */
     width: 89vw;
     display: flex;
     justify-content: space-between;
   }
   #footer-links p {
     color: #581411;
-    font-family: cursive;
+    font-family: cursive !important;
     font-size: 26px;
   }
   #social-links {
