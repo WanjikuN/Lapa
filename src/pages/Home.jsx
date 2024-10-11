@@ -15,7 +15,7 @@ const Home = () =>{
       {/* <img src={home1} alt="hero image"></img> */}
       <Navbar />
       <HeroSection />
-      <Approach />
+      
       <Approach2 />
       <Projects />
       <OurPartners />
