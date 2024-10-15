@@ -4,6 +4,33 @@
   #footer-links img {
     width: 200px;
   }
+  .dropdown{
+  display: flex;
+  flex-direction: column;
+  width: auto !important;
+  /* padding: 0px; */
+  /* align-items: center !important; */
+  background-color: rgba(255, 255, 255, 0.664) !important;;
+  justify-content: flex-end !important;
+  line-height: 2;
+  padding: 5px;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.089); /* Optional shadow for a bubble effect */
+    font-family: "poppins";
+    position: absolute !important;
+    top: 7vh;
+    z-index: 1000;
+ 
+
+  /* border: 1px solid red; */
+
+}
+.dropdown a{
+  /* border: 10px solid rgb(94, 255, 0) !important; */
+  font-size: 14px !important;
+  color: #000 !important;
+  font-weight: 300 !important;
+}
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -14,6 +41,33 @@
     width: auto;
     margin-top: 20px !important;
   }
+  .dropdown{
+  display: flex;
+  flex-direction: column;
+  width: auto !important;
+  /* padding: 0px; */
+  /* align-items: center !important; */
+  background-color: rgba(255, 255, 255, 0.664) !important;;
+  justify-content: flex-end !important;
+  line-height: 2;
+  padding: 5px;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.089); /* Optional shadow for a bubble effect */
+    font-family: "poppins";
+    position: absolute !important;
+    top: 7vh;
+    z-index: 1000;
+ 
+
+  /* border: 1px solid red; */
+
+}
+.dropdown a{
+  /* border: 10px solid rgb(94, 255, 0) !important; */
+  font-size: 14px !important;
+  color: #000 !important;
+  font-weight: 300 !important;
+}
   #hero-section {
     height: 100vh;
     background-image: url(../../assets/images/hero-home.png),
@@ -410,6 +464,33 @@
     width: 92vw !important;
     z-index: 1000;
   }
+  .dropdown{
+  display: flex;
+  flex-direction: column;
+  width: auto !important;
+  /* padding: 0px; */
+  /* align-items: center !important; */
+  background-color: rgba(255, 255, 255, 0.966) !important;;
+  justify-content: flex-end !important;
+  line-height: 2;
+  padding: 5px;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.089); /* Optional shadow for a bubble effect */
+    font-family: "poppins";
+    position: absolute !important;
+    top: 7vh;
+    z-index: 1000;
+ 
+
+  /* border: 1px solid red; */
+
+}
+.dropdown a{
+  /* border: 10px solid rgb(94, 255, 0) !important; */
+  font-size: 14px !important;
+  color: #000 !important;
+  font-weight: 300 !important;
+}
   #navbar .logo img {
     height: 60px !important;
     width: auto;
@@ -843,6 +924,13 @@
     z-index: 1000;
     /* border: 1px solid red !important; */
   }
+  .dropdown a{
+  /* border: 10px solid rgb(94, 255, 0) !important; */
+  font-size: 14px !important;
+  color: #000 !important;
+  font-weight: 300 !important;
+}
+
   #hero-section {
     height: 100vh !important;
     background-image: url(../../assets/images/hero-home.png),
@@ -1317,11 +1405,12 @@
   align-items: center;
   height: 5vh;
   padding: 1% 4.5vw;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   position: fixed;
   top: 0;
   width: 91vw;
   z-index: 1000;
+  /* border: 1px solid red; */
 }
 
 /* Logo styles */
@@ -1353,7 +1442,7 @@
 }
 
 #navbar .nav-links li {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 #navbar .nav-links a {
@@ -1788,3 +1877,10 @@ h6 {
   font-size: 18px;
   font-family: "Source_sans_pro";
 }
+ .dropdown a:hover{
+    color: #ed8e1c !important;
+      border: none !important;
+      padding: 4px;
+      cursor: pointer;
+/* background-color: rgba(197, 138, 126, 0.062); */
+ }

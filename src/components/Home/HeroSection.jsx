@@ -1,4 +1,3 @@
-import "./home.css";
 const HeroSection = () => {
   return (
     <div id="hero-section">
