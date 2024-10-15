@@ -1,4 +1,3 @@
-import "./home.css";
 import judge from "../../assets/images/judge.jpg";
 import advocacy from "../../assets/images/advocacynew.png";
 import research from "../../assets/images/research.png";

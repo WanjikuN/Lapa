@@ -1,4 +1,3 @@
-import "./home.css";
 import waves from "./../../assets/images/waves.jpg";
 import claws from "./../../assets/images/claws.png";
 import justice from "./../../assets/images/justice.jpg";

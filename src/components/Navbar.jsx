@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./home.css";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-
+const navigate = useNavigate(); 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -37,13 +37,14 @@ const Navbar = () => {
             {aboutOpen && (
               <ul className="dropdown">
                 <li>
-                  <a href="#team">Our Cause</a>
+                  <a onClick={() => navigate("/about-us")}>About Us</a>
                 </li>
                 <li>
-                  <a href="#mission">Our Partners</a>
+                  <a onClick={() => navigate("/our-cause")}>Our Cause</a>
                 </li>
+               
                 <li>
-                  <a href="#mission">Work with US</a>
+                  <a onClick={() => navigate("/work-with-us")} >Work with US</a>
                 </li>
               </ul>
             )}

@@ -1881,5 +1881,6 @@ h6 {
     color: #ed8e1c !important;
       border: none !important;
       padding: 4px;
+      cursor: pointer;
 /* background-color: rgba(197, 138, 126, 0.062); */
  }
