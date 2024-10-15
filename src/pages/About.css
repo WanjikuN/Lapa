@@ -1,4 +1,24 @@
 #container{
   height: 100vh;
-  border: 1px solid red;
+  width: 99vw;
+  /* border: 10px solid red; */
+}
+
+@media (min-width: 1201px) {
+  #about-cont{
+    /* border: 1px solid red; */
+    height:79vh;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (max-width: 1200px) {
+  #about-cont{
+    /* border: 1px solid red; */
+    height:85vh;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+  } 
 }

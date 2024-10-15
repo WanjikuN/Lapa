@@ -14,7 +14,7 @@ console.log("Page",page)
   return (
     <Routes>
       <Route exact path="/" element={<Home setPage={setPage}/>} />
-      <Route exact path="/about-us" element={<AboutUs setPage={setPage} page={page}/>} />
+      <Route  path="/about-us" element={<AboutUs setPage={setPage} page={page}/>} />
       
     </Routes>
   );

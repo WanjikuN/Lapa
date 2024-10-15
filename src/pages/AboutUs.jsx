@@ -1,25 +1,21 @@
+import FooterHome from "../components/FooterHome";
+import Navbar from "../components/Navbar";
 import OurCause from "./OurCause";
 import WorkWithUs from "./WorkWithUs";
-
+import "./About.css";
 
 const AboutUs = ({ setPage, page }) => {
-  const renderPage = () => {
-    switch (page) {
-      case "about":
-        return <AboutUs setPage={setPage} />;
-      case "ourCause":
-        return <OurCause setPage={setPage} />;
-      case "workWithUs":
-        return <WorkWithUs setPage={setPage} />;
-      default:
-        return <AboutUs setPage={setPage} />;     }
-  };
+
 
   return (
     <div id="container">
-      <div>{/* navbar */}</div>
-      <div>{renderPage()}</div>
-      <div>{/* footer */}</div>
+      {/* navbar */
+        <Navbar />
+        }
+      <div id="about-cont">{}</div>
+      <div>{/* footer */}
+        <FooterHome />
+      </div>
     </div>
   );
 };
