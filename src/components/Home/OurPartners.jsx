@@ -1,4 +1,3 @@
-import "./home.css";
 import usaid from "../../assets/images/usaid.png";
 import united from "../../assets/images/United for Wildlife.png";
 import wita from "../../assets/images/wita1.webp";
