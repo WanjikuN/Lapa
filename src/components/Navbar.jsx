@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({setPage}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -37,14 +37,37 @@ const navigate = useNavigate();
             {aboutOpen && (
               <ul className="dropdown">
                 <li>
-                  <a onClick={() => navigate("/about-us")}>About Us</a>
+                  <a
+                    onClick={() => {
+                      setPage("AboutUs");
+                      navigate("/about-us");
+                    }}
+                  >
+                    About Us
+                  </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate("/our-cause")}>Our Cause</a>
+                  <a
+                    onClick={() => {
+                      setPage("OurCause");
+                                            navigate("/about-us");
+
+                    }}
+                  >
+                    Our Cause
+                  </a>
                 </li>
-               
+
                 <li>
-                  <a onClick={() => navigate("/work-with-us")} >Work with US</a>
+                  <a
+                    onClick={() => {
+                      setPage("WorkWithUs");
+                                            navigate("/about-us");
+
+                    }}
+                  >
+                    Work with US
+                  </a>
                 </li>
               </ul>
             )}

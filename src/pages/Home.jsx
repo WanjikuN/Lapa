@@ -8,12 +8,12 @@ import OurPartners from "../components/Home/OurPartners";
 import FooterHome from "../components/FooterHome";
 import Navbar from "../components/Navbar";
 
-const Home = () =>{
+const Home = ({setPage}) =>{
   return (
     <div id="home">
       {/* <img src={home} alt="hero image"></img> */}
       {/* <img src={home1} alt="hero image"></img> */}
-      <Navbar />
+      <Navbar  setPage={setPage}/>
       <HeroSection />
       
       <Approach2 />
