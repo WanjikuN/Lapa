@@ -4,19 +4,19 @@
   /* border: 10px solid red; */
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1025px) {
   #about-cont{
     /* border: 1px solid red; */
-    height:79vh;
+    height:81vh;
     width: 100vw;
     position: relative;
     z-index: 1;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   #about-cont{
     /* border: 1px solid red; */
-    height:85vh;
+    height:87vh;
     width: 100vw;
     position: relative;
     z-index: 1;
