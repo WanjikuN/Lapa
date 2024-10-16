@@ -1,0 +1,35 @@
+#map{
+  height: 65vh;
+  width: 60vw;
+  /* border: 1px dashed #c58a7e; */
+  position: relative;
+  top: 5vh;
+  border-radius:10px ;
+    border: 1px dashed #c58a7e;
+
+}
+
+#form{
+  height: 65vh;
+  width: 30vw;
+  position: relative;
+  top: 5vh;
+  border-radius:10px ;
+  
+}
+#btn{
+  padding: 20px 30px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  background-color: #ed8e1c;
+  color: #581411;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+
+}
+#btn:hover{
+  background-color: #581411 !important;
+    cursor: pointer;
+    color: #ed8e1c;
+    border: none;
+}

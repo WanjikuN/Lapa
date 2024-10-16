@@ -7,15 +7,22 @@ import AboutUs from "./pages/AboutUs";
 import OurCause from "./pages/OurCause";
 import WorkWithUs from "./pages/WorkWithUs";
 import { useState } from "react";
+import Contact from "./pages/Contact";
 
 function App() {
     const [page, setPage] = useState('home');
 console.log("Page",page)
   return (
     <Routes>
-      <Route exact path="/" element={<Home setPage={setPage}/>} />
-      <Route exact path="/about-us" element={<AboutUs setPage={setPage} page={page}/>} />
-      
+      <Route exact path="/" element={<Home setPage={setPage} />} />
+      <Route
+        path="/about-us"
+        element={<AboutUs setPage={setPage} page={page} />}
+      />
+      <Route
+        path="/contact"
+        element={<Contact setPage={setPage} page={page} />}
+      />
     </Routes>
   );
 }
