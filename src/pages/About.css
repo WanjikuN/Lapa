@@ -83,10 +83,9 @@
   font-size: 16px;
   color: #34495e;
 }
-#our-cause img{
+#our-cause img {
   width: 80%;
   height: 50%;
-
 }
 /* about us main */
 /* General Container */
@@ -96,7 +95,7 @@
   height: 90% !important;
   margin: 0 auto;
   display: flex;
-  
+
   justify-items: center;
   align-items: center;
   /* border: 1px solid red; */
@@ -143,15 +142,15 @@
 
 /* Mission, Vision, Values Background Images */
 .mission-title {
-  background-image: url('../assets/images/mission123.png'); /* Replace with the actual path to the image */
+  background-image: url("../assets/images/mission123.png"); /* Replace with the actual path to the image */
 }
 
 .vision-title {
-  background-image: url('../assets/images/vision123.png'); /* Replace with the actual path to the image */
+  background-image: url("../assets/images/vision123.png"); /* Replace with the actual path to the image */
 }
 
 .values-title {
-  background-image: url('../assets/images/value123.png'); /* Replace with the actual path to the image */
+  background-image: url("../assets/images/value123.png"); /* Replace with the actual path to the image */
 }
 
 /* Content Cards (Bottom Row) */
@@ -182,7 +181,8 @@
 }
 
 /* Content Styling */
-.card p, .card ul {
+.card p,
+.card ul {
   font-size: 16px;
   color: #34495e;
   margin: 0;
@@ -200,13 +200,13 @@
 }
 
 .stepper-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
   width: 4px; /* Thickness of the line */
-  background-color:#f39c12; /* Color of the line */
+  background-color: #f39c12; /* Color of the line */
   transform: translateX(-50%);
 }
 
@@ -221,26 +221,25 @@
 
 .left {
   justify-content: flex-start;
-    position: relative;
-    transform: translate(60px, -5px);
-
+  position: relative;
+  transform: translate(60px, -5px);
 }
 
 .right {
   justify-content: flex-end;
   position: relative;
-    transform: translate(-80px, -50px);
+  transform: translate(-80px, -50px);
 }
 
 .step-card {
   position: relative;
   width: 300px;
   transition: all 0.3s ease;
- /* border: 1px solid red; */
- display: flex;
- flex-direction: column;
- align-items: center !important;
- justify-content:  space-around !important;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: space-around !important;
 }
 
 .step-card.hovered .step-image {
@@ -257,7 +256,6 @@
   display: block;
   /* border: 1px solid red; */
   align-self: center;
-    
 
   /* margin-bottom: 10px; */
 }
@@ -266,13 +264,12 @@
   font-weight: bold !important;
   text-align: center;
   margin-bottom: 10px;
-    cursor: pointer;
-    font-family: "poppins" !important;
-    font-size: 16px !important;
-    color:#581411;
-    text-transform: uppercase !important;
+  cursor: pointer;
+  font-family: "poppins" !important;
+  font-size: 16px !important;
+  color: #581411;
+  text-transform: uppercase !important;
   /* border: 1px solid red; */
-
 }
 
 .step-content {
@@ -326,7 +323,6 @@
   z-index: 0;
   position: relative;
   transform: translate(-15%, 70%); /* Offset to create overlap */
-
 }
 
 .mission-title {
@@ -351,7 +347,9 @@
   transform: translate(25%, 10px); /* Offset to create overlap */
 }
 
-.mission-content ,.vision-content , .values-content {
+.mission-content,
+.vision-content,
+.values-content {
   background-color: white; /* Red */
   height: 380px;
   width: 320px;
@@ -367,7 +365,8 @@
 }
 
 /* Content Styling */
-.card p, .card ul {
+.card p,
+.card ul {
   font-size: 16px;
   color: #34495e;
   margin: 0;
@@ -390,7 +389,12 @@
   z-index: 1;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+#contact-cont{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Responsive Styling */
 @media (max-width: 768px) {
   .card-container {
@@ -430,6 +434,8 @@
     flex-direction: row;
     /* border: 1px solid rgba(255, 255, 255); */
   }
+
+  #contact-cont,
   #about-cont {
     /* border: 1px solid red; */
     height: 81vh;
@@ -454,6 +460,7 @@
   }
 }
 @media (max-width: 1024px) {
+  #contact-cont,
   #about-cont {
     /* border: 1px solid red; */
     height: 87vh;

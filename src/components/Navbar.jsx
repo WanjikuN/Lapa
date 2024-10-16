@@ -89,7 +89,7 @@ const Navbar = ({setPage}) => {
             // onMouseEnter={toggleServicesDropdown}
             // onMouseLeave={toggleServicesDropdown}
           >
-            <a href="#services">Services</a>
+            <a href="#projects">Our Projects</a>
             {servicesOpen && (
               <ul className="dropdown">
                 <li>
@@ -111,7 +111,15 @@ const Navbar = ({setPage}) => {
             )}
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="#contact"
+              onClick={() => {
+                setPage("AboutUs");
+                navigate("/contact");
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
