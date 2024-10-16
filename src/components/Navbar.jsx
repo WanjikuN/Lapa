@@ -5,7 +5,7 @@ const Navbar = ({setPage}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -20,13 +20,27 @@ const navigate = useNavigate();
 
   return (
     <div id="navbar">
-      <div className="logo">
+      <div
+        className="logo"
+        onClick={() => {
+          setPage("Home");
+          navigate("/");
+        }}
+      >
         <img src="./lapa-logo.png" alt="Logo" />
       </div>
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a
+              href="#home"
+              onClick={() => {
+                setPage("Home");
+                navigate("/");
+              }}
+            >
+              Home
+            </a>
           </li>
           <li
             onClick={toggleAboutDropdown}
@@ -50,8 +64,7 @@ const navigate = useNavigate();
                   <a
                     onClick={() => {
                       setPage("OurCause");
-                                            navigate("/about-us");
-
+                      navigate("/about-us");
                     }}
                   >
                     Our Cause
@@ -62,8 +75,7 @@ const navigate = useNavigate();
                   <a
                     onClick={() => {
                       setPage("WorkWithUs");
-                                            navigate("/about-us");
-
+                      navigate("/about-us");
                     }}
                   >
                     Work with US
@@ -77,7 +89,7 @@ const navigate = useNavigate();
             // onMouseEnter={toggleServicesDropdown}
             // onMouseLeave={toggleServicesDropdown}
           >
-            <a href="#services">Services</a>
+            <a href="#projects">Our Projects</a>
             {servicesOpen && (
               <ul className="dropdown">
                 <li>
@@ -99,7 +111,15 @@ const navigate = useNavigate();
             )}
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="#contact"
+              onClick={() => {
+                setPage("AboutUs");
+                navigate("/contact");
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>

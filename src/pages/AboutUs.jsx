@@ -1,25 +1,36 @@
+import React from "react";
+import FooterHome from "../components/FooterHome";
+import Navbar from "../components/Navbar";
 import OurCause from "./OurCause";
 import WorkWithUs from "./WorkWithUs";
-
+import "./About.css";
+import AboutUsMain from "./AboutUsMain";
 
 const AboutUs = ({ setPage, page }) => {
-  const renderPage = () => {
+  const renderContent = () => {
     switch (page) {
-      case "about":
-        return <AboutUs setPage={setPage} />;
-      case "ourCause":
-        return <OurCause setPage={setPage} />;
-      case "workWithUs":
-        return <WorkWithUs setPage={setPage} />;
+      case "OurCause":
+        return <OurCause />;
+      case "WorkWithUs":
+        return <WorkWithUs />;
+      case "AboutUs":
+        return <AboutUsMain />;
       default:
-        return <AboutUs setPage={setPage} />;     }
+        return <AboutUsMain />;
+    }
   };
 
   return (
     <div id="container">
-      <div>{/* navbar */}</div>
-      <div>{renderPage()}</div>
-      <div>{/* footer */}</div>
+      {/* Render the Navbar and pass setPage to update the page state */}
+      <Navbar setPage={setPage} />
+      <div id="about-cont">
+        {renderContent()} {/* Conditionally render based on page */}
+      </div>
+      <div>
+        {/* footer */}
+        <FooterHome />
+      </div>
     </div>
   );
 };
