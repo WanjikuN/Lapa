@@ -104,7 +104,7 @@
   #approach2-cause {
     top: 8vh;
     position: relative;
-    height: 85%;
+    height: 84%;
   }
 
   #our-cause {
@@ -199,6 +199,84 @@
     color: #34495e;
     margin: 0;
   }
+  
+  .card {
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    font-family: "poppins";
+    border: 1px dashed #c58a7e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  .card-title {
+    background-color: #ed8f1cb6;
+    z-index: 0;
+    position: relative;
+    transform: translate(-15%, 60%);
+    /* border: 1px solid red; */
+  }
+   .card-content {
+    background-color: #ecf0f1;
+    z-index: 1;
+    padding: 15px;
+    line-height: 2;
+    position: relative;
+    transform: translate(25%, 40px);
+
+  }
+  .mission-title {
+    top: 0;
+  }
+  .vision-title {
+    top: 0;
+  }
+  .values-title {
+    top: 0;
+  }
+ 
+  .mission-content,
+  .vision-content,
+  .values-content {
+    background-color: white;
+    height: 380px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+            /* border: 1px solid red; */
+
+  }
+  .card h2 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+  }
+  .card p,
+  .card ul {
+    font-size: 14px;
+    color: #34495e;
+    margin: 0;
+  }
+  .card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .card ul li {
+    margin-bottom: 5px;
+  }
+  .card-content {
+    margin-top: -50px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
   .approach2 {
     padding: 20px;
     display: flex;
@@ -221,7 +299,7 @@
 
   .bubble-cont {
     margin: 0 auto;
-    padding: 70px 40px;
+    padding: 70px 30px !important;
   }
 
   .bubble h1 {
@@ -232,7 +310,7 @@
   }
 
   .bubble p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     color: #34495e;
     margin-bottom: 15px;
@@ -245,7 +323,7 @@
 
   .bubble ul li {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #34495e;
   }
 
@@ -326,83 +404,6 @@
   }
   .step-card.hovered .step-content {
     display: block;
-  }
-  .card {
-    width: 250px;
-    height: 150px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    font-family: "poppins";
-    border: 1px dashed #c58a7e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-  }
-  .card-title {
-    background-color: #ed8f1cb6;
-    z-index: 0;
-    position: relative;
-    transform: translate(-15%, 60%);
-    /* border: 1px solid red; */
-  }
-   .card-content {
-    background-color: #ecf0f1;
-    z-index: 1;
-    padding: 15px;
-    line-height: 2;
-    position: relative;
-    transform: translate(25%, 40px);
-
-  }
-  .mission-title {
-    top: 0;
-  }
-  .vision-title {
-    top: 0;
-  }
-  .values-title {
-    top: 0;
-  }
- 
-  .mission-content,
-  .vision-content,
-  .values-content {
-    background-color: white;
-    height: 380px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-            /* border: 1px solid red; */
-
-  }
-  .card h2 {
-    font-size: 24px;
-    color: white;
-    margin: 0;
-  }
-  .card p,
-  .card ul {
-    font-size: 14px;
-    color: #34495e;
-    margin: 0;
-  }
-  .card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  .card ul li {
-    margin-bottom: 5px;
-  }
-  .card-content {
-    margin-top: -50px;
-    margin-left: 50px;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
   #contact-cont {
     display: flex;
