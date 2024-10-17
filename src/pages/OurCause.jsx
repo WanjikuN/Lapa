@@ -34,7 +34,7 @@ const OurCause = () => {
               </li>
             </ul>
           </div>
-          <img src={cause}alt="our-cause" />
+          <img src={cause}alt="our-cause" id="our-cause-img"/>
         </div>
         <div className="bubble" id="bubble-cause">
           <div className="bubble-cont">
