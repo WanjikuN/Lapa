@@ -23,7 +23,7 @@ const Contact = ({page, setPage}) => {
               autoComplete="off"
               sx={{ maxWidth: "500px", margin: "auto" }}
             >
-              <Typography variant="h4" gutterBottom>
+              <Typography variant="h1" gutterBottom id="contact-title" style={{color: "#581411"}}>
                 Contact Us
               </Typography>
 
