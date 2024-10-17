@@ -1,35 +1,191 @@
-#map{
-  height: 65vh;
-  width: 60vw;
-  /* border: 1px dashed #c58a7e; */
-  position: relative;
-  top: 5vh;
-  border-radius:10px ;
+@media (min-width: 1201px) {
+  /* Large screen */
+  #map {
+    height: 65vh;
+    width: 55vw;
+    margin-right: 5vw;
+    /* border: 1px dashed #c58a7e; */
+    position: relative;
+    top: 5vh;
+    border-radius: 10px;
     border: 1px dashed #c58a7e;
+  }
 
-}
-
-#form{
-  height: 65vh;
-  width: 30vw;
-  position: relative;
-  top: 5vh;
-  border-radius:10px ;
-  
-}
-#btn{
-  padding: 20px 30px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  background-color: #ed8e1c;
-  color: #581411;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-
-}
-#btn:hover{
-  background-color: #581411 !important;
+  #form {
+    height: 65vh;
+    width: 30vw;
+    position: relative;
+    top: 15vh;
+    border-radius: 10px;
+  }
+  #btn {
+    padding: 10px 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #ed8e1c;
+    color: #581411;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  #btn:hover {
+    background-color: #581411 !important;
     cursor: pointer;
     color: #ed8e1c;
     border: none;
+  }
+}
+@media (min-width: 1800px) {
+  #map {
+    height: 65vh;
+    width: 60vw !important;
+    margin-right: 0 !important;
+    /* border: 1px dashed #c58a7e; */
+    position: relative;
+    top: 5vh;
+    border-radius: 10px;
+    border: 1px dashed #c58a7e;
+  }
+  #btn {
+    padding: 20px 30px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    background-color: #ed8e1c;
+    color: #581411;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  #form {
+    height: 65vh;
+    width: 30vw;
+    position: relative;
+    top: 12vh;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #map {
+    height: 65vh;
+    width: 55vw;
+    margin-right: 5vw;
+    /* border: 1px dashed #c58a7e; */
+    position: relative;
+    top: 5vh;
+    border-radius: 10px;
+    border: 1px dashed #c58a7e;
+  }
+
+  #form {
+    height: 65vh;
+    width: 30vw;
+    position: relative;
+    top: 17vh;
+    border-radius: 10px;
+  }
+  #btn {
+    padding: 10px 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #ed8e1c;
+    color: #581411;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  #btn:hover {
+    background-color: #581411 !important;
+    cursor: pointer;
+    color: #ed8e1c;
+    border: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Ipads*/
+  #map {
+    height: 25vh;
+    width: 90vw;
+    /* border: 1px dashed #c58a7e; */
+    position: relative;
+    top: 8vh;
+    border-radius: 10px;
+    border: 1px dashed #c58a7e;
+  }
+
+  #form {
+    height: 45vh;
+    width: 90vw;
+    position: relative;
+    /* top: 10vh; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+  }
+  #btn {
+    /* padding: 5px 5px; */
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #ed8e1c;
+    color: #581411;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  #btn:hover {
+    background-color: #581411 !important;
+    cursor: pointer;
+    color: #ed8e1c;
+    border: none;
+  }
+  #contact-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    /* border: 1px solid red !important; */
+  }
+}
+@media (max-width: 768px) {
+  /* Mobile screen */
+  #map {
+    height: 20vh;
+    width: 90vw;
+    /* border: 1px dashed #c58a7e; */
+    position: relative;
+    top: 8vh;
+    border-radius: 10px;
+    border: 1px dashed #c58a7e;
+  }
+
+  #form {
+    height: 40vh;
+    width: 90vw;
+    position: relative;
+    /* top: 10vh; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+  }
+  .form-input {
+    /* border: 1px solid red !important; */
+    height: 40px;
+  }
+
+  #btn {
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background-color: #ed8e1c;
+    color: #581411;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  #btn:hover {
+    background-color: #581411 !important;
+    cursor: pointer;
+    color: #ed8e1c;
+    border: none;
+  }
+  #contact-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    /* border: 1px solid red !important; */
+  }
 }
