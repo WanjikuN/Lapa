@@ -1348,11 +1348,13 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center, bottom;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
   position: relative;
   text-align: center;
   z-index: 1;
+  flex-direction: column;
+  line-height: 0.5;
   /* border: 1px solid red; */
 }
 .three {
@@ -1367,21 +1369,19 @@
 #hero-section h2 {
   position: absolute;
   top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   color: white;
   font-family: "Source_sans_pro";
   font-size: 46px;
 }
 #hero-section p {
-  font-size: 24px;
-  color: #c58a7e;
+  font-size: 24px !important;
+  color: #ed8e1c;
   font-weight: bold;
-  font-family: "poppins";
+  font-family: "Source Sans Pro";
   position: absolute;
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+
 }
 
 #hero-section h2 {
@@ -1405,7 +1405,7 @@
   align-items: center;
   height: 5vh;
   padding: 1% 4.5vw;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255);
   position: fixed;
   top: 0;
   width: 91vw;
@@ -1418,9 +1418,9 @@
   width: 50%;
 }
 #navbar .logo img {
-  height: 69px;
+  height: 80px;
   width: auto;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 /* Navigation links */
@@ -1448,7 +1448,7 @@
 #navbar .nav-links a {
   text-decoration: none;
   color: #581411;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   /* border: 1px solid red; */
 }
@@ -1575,7 +1575,7 @@ h1 {
 }
 
 .approach-card-one {
-  height: 51%;
+  height: auto !important;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -1592,12 +1592,12 @@ h1 {
 }
 .approach-card-one h3 {
   font-family: "sans-serif";
-  font-size: 14px;
+  font-size: 24px;
   color: #ed8e1c;
 }
 .approach-card {
   width: 23%;
-  height: 100%;
+  height: auto !important;
   background-color: rgba(0, 0, 0, 0.596);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;

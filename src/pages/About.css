@@ -248,7 +248,7 @@
     background-color: #ed8f1cb6;
     z-index: 0;
     position: relative;
-    transform: translate(-15%, 60%);
+    transform: translate(-15%, 40%);
     /* border: 1px solid red; */
   }
   .card-content {
@@ -257,7 +257,7 @@
     padding: 15px;
     line-height: 2;
     position: relative;
-    transform: translate(25%, 40px);
+    transform: translate(25%, 50px);
   }
   .mission-title {
     top: 0;
@@ -377,7 +377,7 @@
   .stepper-card {
     display: flex;
     width: 50%;
-    height: 180px !important;
+    height: 150px !important;
     justify-content: flex-end;
     position: relative;
   }
@@ -407,8 +407,8 @@
     font-size: 2rem;
   }
   .step-image {
-    width: 280px !important;
-    height: 150px !important;
+    width: 250px !important;
+    height: 100px !important;
     display: block;
     align-self: center;
     border-radius: 10px;
