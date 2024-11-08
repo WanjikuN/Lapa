@@ -37,14 +37,15 @@
 
   #contact-cont,
   #about-cont {
-    height: 81vh;
+    height: auto !important;
     width: 100vw;
     position: relative;
     z-index: 1;
+    /* border: 1px solid red; */
   }
   #about-cont::after {
     content: "";
-    background-image: url(../assets/images/bg.png);
+    /* background-image: url(../assets/images/bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -130,10 +131,11 @@
     top: 8vh;
     position: relative;
     height: 84%;
+    
   }
 
   #our-cause {
-    height: 100%;
+    height: 100vh !important;
     position: relative;
     /* border: 1px solid red; */
   }
@@ -151,7 +153,7 @@
     border: none;
     position: relative;
     text-align: center;
-    top: 8vh;
+    top: 10vh;
   }
   .card-container {
     top: 3vh;
@@ -205,7 +207,7 @@
     background-color: #ecf0f1;
     z-index: 1;
     position: relative;
-    transform: translate(-40px, -40px);
+    transform: translate(-50px, -40px);
     /* border: 1px solid red !important; */
   }
   .mission-content {
@@ -230,8 +232,8 @@
   }
 
   .card {
-    width: 250px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -241,15 +243,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
+    font-size: 20px;
+    /* border: 1px solid red; */
   }
   .card-title {
     background-color: #ed8f1cb6;
     z-index: 0;
     position: relative;
-    transform: translate(-15%, 40%);
+    /* transform: translate(-70px, 60px); */
     /* border: 1px solid red; */
+    margin-right: 45%;
+    margin-top: 15%;
   }
   .card-content {
     background-color: #ecf0f1;
@@ -257,10 +263,13 @@
     padding: 15px;
     line-height: 2;
     position: relative;
-    transform: translate(25%, 50px);
+    margin-left: 45%;
+    margin-top: -5%;
+    /* transform: translate(60px, 10px); */
   }
   .mission-title {
     top: 0;
+    
   }
   .vision-title {
     top: 0;
@@ -273,7 +282,7 @@
   .vision-content,
   .values-content {
     background-color: white;
-    height: 380px;
+    height: 350px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -286,9 +295,12 @@
   }
   .card p,
   .card ul {
-    font-size: 14px;
+    font-size: 18px;
     color: #34495e;
     margin: 0;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro' !important;
+    text-align: start;
   }
   .card ul {
     list-style-type: disc;
@@ -298,11 +310,12 @@
     margin-bottom: 5px;
   }
   .card-content {
-    margin-top: -50px;
-    margin-left: 50px;
+    /* margin-top: -50px; */
+    /* margin-left: 50px; */
     position: relative;
     z-index: 1;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 290px;
   }
   .approach2 {
     padding: 20px;
@@ -1520,7 +1533,7 @@ height: 100%;
   }
 }
 #container {
-  height: 100vh;
+  height: auto !important;
   width: 100vw;
   /* border: 10px solid red; */
   overflow-x: hidden;

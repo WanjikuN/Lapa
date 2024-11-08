@@ -27,10 +27,10 @@ const AboutUs = ({ setPage, page }) => {
       <div id="about-cont">
         {renderContent()} {/* Conditionally render based on page */}
       </div>
-      <div>
+      
         {/* footer */}
         <FooterHome />
-      </div>
+     
     </div>
   );
 };
