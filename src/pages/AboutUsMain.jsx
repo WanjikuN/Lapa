@@ -18,9 +18,7 @@ const AboutUsMain = () => {
         {/* Bottom Row: Content */}
         <div className="card card-content mission-content">
           <p>
-            LAPA stands as a resolute champion, fighting for a future where
-            animals are treated with respect and the environment flourishes in
-            harmony. Their mission is clear: to promote animal welfare and
+            To promote animal welfare and
             environmental sustainability through legal advocacy and
             collaboration.{" "}
           </p>
@@ -41,10 +39,7 @@ const AboutUsMain = () => {
           </ul>
         </div>
         <div className="card card-content values-content">
-          <p>
-            LAPA focuses on collaboration with communities, policymakers, and
-            organizations to enhance their impact. Their priorities include:
-          </p>
+         
           <ul>
             <li>Empowering communities with legal tools.</li>
             <li>Driving advocacy with research.</li>
