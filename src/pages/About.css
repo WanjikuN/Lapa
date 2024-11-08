@@ -136,7 +136,7 @@
     height: 100vh !important;
   }
   #our-cause {
-    height: auto ;
+    height: auto;
     position: relative;
     /* border: 1px solid red; */
   }
@@ -332,7 +332,7 @@
     background-color: rgba(221, 210, 210, 0.158);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-left: 1px solid #c58a7e;
-        border-right: 1px solid #c58a7e;
+    border-right: 1px solid #c58a7e;
     border-bottom: 1px solid #c58a7e;
     border-radius: 10px;
 
@@ -410,7 +410,7 @@
     justify-content: flex-end;
     position: relative;
     transform: translate(5px, -110px);
-        /* border: 1px solid black */
+    /* border: 1px solid black */
   }
   .step-card {
     position: relative;
@@ -458,6 +458,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
   }
 }
 
