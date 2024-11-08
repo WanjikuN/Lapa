@@ -131,11 +131,12 @@
     top: 8vh;
     position: relative;
     height: 84%;
-    
   }
-
-  #our-cause {
+  .about-us {
     height: 100vh !important;
+  }
+  #our-cause {
+    height: auto ;
     position: relative;
     /* border: 1px solid red; */
   }
@@ -169,8 +170,8 @@
     gap: 0px;
   }
   #our-cause img {
-    width: 80%;
-    height: 50%;
+    width: 20%;
+    height: 30%;
   }
   .card {
     width: 250px;
@@ -207,7 +208,7 @@
     background-color: #ecf0f1;
     z-index: 1;
     position: relative;
-    transform: translate(-50px, -40px);
+    /* transform: translate(-50px, -40px); */
     /* border: 1px solid red !important; */
   }
   .mission-content {
@@ -254,8 +255,8 @@
     position: relative;
     /* transform: translate(-70px, 60px); */
     /* border: 1px solid red; */
-    margin-right: 45%;
-    margin-top: 15%;
+    margin-right: 38%;
+    margin-top: 0%;
   }
   .card-content {
     background-color: #ecf0f1;
@@ -263,13 +264,12 @@
     padding: 15px;
     line-height: 2;
     position: relative;
-    margin-left: 45%;
-    margin-top: -5%;
+    margin-left: 23%;
+    margin-top: -30%;
     /* transform: translate(60px, 10px); */
   }
   .mission-title {
     top: 0;
-    
   }
   .vision-title {
     top: 0;
@@ -299,7 +299,7 @@
     color: #34495e;
     margin: 0;
     line-height: 1.5;
-    font-family: 'Source Sans Pro' !important;
+    font-family: "Source Sans Pro" !important;
     text-align: start;
   }
   .card ul {
@@ -331,7 +331,11 @@
   #bubble-cause {
     background-color: rgba(221, 210, 210, 0.158);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #c58a7e;
+    border-left: 1px solid #c58a7e;
+        border-right: 1px solid #c58a7e;
+    border-bottom: 1px solid #c58a7e;
+    border-radius: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,17 +347,17 @@
   }
 
   .bubble h1 {
-    font-size: 24px;
+    font-size: 46px;
     color: #2c3e50;
     text-align: center;
     margin-bottom: 15px;
   }
 
   .bubble p {
-    font-size: 14px;
+    font-size: 18px !important;
     line-height: 1.6;
     color: #34495e;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .bubble ul {
@@ -363,7 +367,7 @@
 
   .bubble ul li {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 18px !important;
     color: #34495e;
   }
 
@@ -628,7 +632,6 @@
   /* Mission, Vision, Values Background Images */
   .mission-title {
     background-image: url("../assets/images/mission123.png");
-    
   }
   .vision-title {
     background-image: url("../assets/images/vision123.png");
@@ -1205,8 +1208,8 @@
   }
 }
 @media (max-width: 768px) {
-   /* Mobile screen */
-   #approach2-cause {
+  /* Mobile screen */
+  #approach2-cause {
     top: 8vh !important;
     position: relative;
     height: 83% !important;
@@ -1214,8 +1217,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
-   
   }
 
   #our-cause {
@@ -1252,7 +1253,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px;
   }
-  
+
   #our-cause-img {
     display: none;
 
@@ -1423,8 +1424,8 @@
   .bubble-cont {
     margin: 0 auto;
     padding: 5px 36px !important;
-        /* border: 1px solid red; */
-height: 100%;
+    /* border: 1px solid red; */
+    height: 100%;
   }
 
   .bubble h1 {

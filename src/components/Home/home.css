@@ -1551,7 +1551,7 @@
 }
 h1 {
   margin: 0;
-  font-size: 46px !important;
+  font-size: 46px ;
   font-family: "Source Sans Pro";
   border-bottom: 1px dashed #c58a7e;
   text-align: center !important;

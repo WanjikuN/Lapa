@@ -1,7 +1,7 @@
 import React from "react";
 const AboutUsMain = () => {
   return (
-    <div id="our-cause">
+    <div id="our-cause" className="about-us">
       <h1 id="title">About Us</h1>
       <div className="card-container">
         {/* Top Row: Titles */}
