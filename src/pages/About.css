@@ -378,25 +378,28 @@
     align-items: center;
     position: relative;
     top: 10vh;
-    height: 85%;
+    height: auto;
     /* border: 1px solid red; */
+    margin-bottom: 60px;
   }
   .stepper-container::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 1vh;
+    bottom: 10vh;
     left: 50%;
     width: 4px;
     background-color: #f39c12;
     transform: translateX(-50%);
+    /* height: 100%; */
   }
   .stepper-card {
     display: flex;
     width: 50%;
-    height: 150px !important;
+    height: 158px !important;
     justify-content: flex-end;
     position: relative;
+    /* border: 1px solid red; */
   }
   .left {
     justify-content: flex-start;
@@ -406,7 +409,8 @@
   .right {
     justify-content: flex-end;
     position: relative;
-    transform: translate(5px, -70px);
+    transform: translate(5px, -110px);
+        /* border: 1px solid black */
   }
   .step-card {
     position: relative;
