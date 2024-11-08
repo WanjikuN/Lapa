@@ -1866,6 +1866,7 @@ h1 {
   color: #581411;
   font-family: 'Source Sans Pro';
   font-size: 20px;
+  font-weight: bold;
 }
 #social-links {
   display: flex;
@@ -1890,7 +1891,8 @@ h1 {
 h6 {
   color: #581411;
   font-size: 18px;
-  font-family: "Source_sans_pro";
+  /* font-family: "Source Sans Pro" !important; */
+  font-weight: 400;
 }
 .dropdown a:hover {
   color: #ed8e1c !important;
