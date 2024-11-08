@@ -5,9 +5,9 @@ import Navbar from "../components/Navbar";
 import "./Contact.css";
 const Contact = ({ page, setPage }) => {
   return (
-    <div>
+    <>
       <Navbar setPage={setPage} />
-      <div id="contact-cont">
+      <div id="contact-cont" >
         <div id="map">
           {/* map */}
           <NairobiMap />
@@ -82,7 +82,7 @@ const Contact = ({ page, setPage }) => {
         {/* footer */}
         <FooterHome />
       </div>
-    </div>
+    </>
   );
 };
 export default Contact;
