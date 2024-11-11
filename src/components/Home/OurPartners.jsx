@@ -1,4 +1,4 @@
-import usaid from "../../assets/images/usaid.png";
+import usaidA from "../../assets/images/usaid.png";
 import united from "../../assets/images/United for Wildlife.png";
 import wita from "../../assets/images/wita1.webp";
 import baraza from "../../assets/images/Baraza Global.png";
@@ -17,7 +17,7 @@ const OurPartners = () => {
     <div id="our-partners">
       <h2>Our Partners</h2>
       <div className="partners-row">
-        <img src={usaid} alt="Partner 1" />
+        <img src={usaidA} alt="Partner 1" />
         <img src={united} alt="Partner 2" />
         <img src={wita} alt="Partner 3" />
         <img src={baraza} alt="Partner 4" />
@@ -32,7 +32,7 @@ const OurPartners = () => {
         <img src={gohaa} alt="Partner 13" />
         <img src={world} alt="Partner 14" />
 
-        <img src={usaid} alt="Partner 1" />
+        <img src={usaidA} alt="Partner 1" />
         <img src={united} alt="Partner 2" />
         <img src={wita} alt="Partner 3" />
         <img src={baraza} alt="Partner 4" />
