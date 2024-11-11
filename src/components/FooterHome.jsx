@@ -54,7 +54,7 @@ const FooterHome = () => {
 
           <div id="contacts">
             <p>Contact Us</p>
-            <h6> info@lapafrica.org</h6>
+            <h6> info@lapa.africa</h6>
             <h6> +254 123 456 789 | +1 (347) 265-7359</h6>
             <h6>Nairobi, Kenya | New York |</h6>
           </div>
