@@ -1,23 +1,22 @@
 @media (min-width: 1201px) {
   /* Large screen */
   #map {
-    height: 65vh;
-    width: 55vw;
+    height: 65%;
+    width: 55%;
     margin-right: 5vw;
     /* border: 1px dashed #c58a7e; */
     position: relative;
-    top: 5vh;
     border-radius: 10px;
     border: 1px dashed #c58a7e;
+    top: 5vh;
     
   }
 
   #form {
-    height: 65vh;
-    width: 30vw;
-    position: relative;
-    /* top: 5vh; */
+    height:65%;
+    width: 30%;
     border-radius: 10px;
+    /* border: 1px solid red; */
 
   }
   #btn {
