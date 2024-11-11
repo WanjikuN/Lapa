@@ -23,16 +23,19 @@ const FlyToLocation = ({ center, zoom }) => {
   const map = useMap();
 
   useEffect(() => {
-    map.flyTo(center, zoom); // Fly to the provided coordinates and zoom level
+    map.flyTo(center, zoom);
   }, [center, zoom, map]);
 
   return null;
 };
 
 const NairobiMap = () => {
-  const nairobiPosition = [-1.286389, 36.817223]; // Latitude and Longitude for Nairobi
-  const initialCenter = [0, 0]; // Start the map at a global view
-  const initialZoom = 2; // Start with a global zoom level
+  // Coordinates for each location
+  const nairobiPosition = [-1.286389, 36.817223];
+    const newYorkPosition = [40.712776, -74.005974];
+
+  const initialCenter = [0, 0];
+  const initialZoom = 2;
 
   // Google and OpenStreetMap layers
   const googleSat = L.tileLayer(
@@ -63,50 +66,46 @@ const NairobiMap = () => {
 
   return (
     <MapContainer
-      center={initialCenter} // Start centered globally
-      zoom={initialZoom} // Start with a global zoom level
+      center={initialCenter}
+      zoom={initialZoom}
       style={{ height: "100%", width: "100%" }}
     >
       {/* LayersControl to switch between layers */}
       <LayersControl position="topright">
-        {/* Google Terrain Layer - default checked */}
         <LayersControl.BaseLayer checked name="Google Terrain">
           <TileLayer
             url="http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}"
             maxZoom={20}
             maxNativeZoom={20}
             subdomains={["mt0", "mt1", "mt2", "mt3"]}
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">L.A.P.A</a>'
           />
         </LayersControl.BaseLayer>
 
-        {/* Google Streets Layer (OpenStreetMap) */}
         <LayersControl.BaseLayer name="Google Streets">
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">L.A.P.A</a>'
-          />
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         </LayersControl.BaseLayer>
 
-        {/* Google Satellite Layer */}
         <LayersControl.BaseLayer name="Google Satellite">
           <TileLayer
             url="http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
             maxZoom={20}
             maxNativeZoom={20}
             subdomains={["mt0", "mt1", "mt2", "mt3"]}
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">L.A.P.A</a>'
           />
         </LayersControl.BaseLayer>
       </LayersControl>
 
       {/* Fly to Nairobi */}
-      <FlyToLocation center={nairobiPosition} zoom={12} />
+      {/* <FlyToLocation center={nairobiPosition} zoom={12} /> */}
 
-      {/* Marker at Nairobi */}
+      {/* Markers for each location */}
       <Marker position={nairobiPosition}>
         <Popup>Nairobi</Popup>
       </Marker>
+      <Marker position={newYorkPosition}>
+        <Popup>New York</Popup>
+      </Marker>
+     
     </MapContainer>
   );
 };

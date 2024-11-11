@@ -80,19 +80,19 @@ const Navbar = ({ setPage }) => {
             {openDropdown === "projects" && (
               <ul className="dropdown">
                 <li>
-                  <a href="#ProjectWaves">Project Waves</a>
+                  <a href="/#projects">Project Waves</a>
                 </li>
                 <li>
-                  <a href="#Claws">Claws</a>
+                  <a href="/#projects">Claws</a>
                 </li>
                 <li>
-                  <a href="#JusticeforWildlife">Justice for Wildlife</a>
+                  <a href="/#projects">Justice for Wildlife</a>
                 </li>
                 <li>
-                  <a href="#WorkingAnimals">Working Animals</a>
+                  <a href="/#projects">Working Animals</a>
                 </li>
                 <li>
-                  <a href="#EcoSyNC">EcoSyNC</a>
+                  <a href="/#projects">EcoSyNC</a>
                 </li>
               </ul>
             )}
