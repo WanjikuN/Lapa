@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = ({setPage}) => {
+const Navbar = ({ setPage }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // Track the open dropdown
   const navigate = useNavigate();
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleAboutDropdown = () => {
-    setAboutOpen(!aboutOpen);
-  };
-
-  const toggleServicesDropdown = () => {
-    setServicesOpen(!servicesOpen);
+  const toggleDropdown = (dropdown) => {
+    setOpenDropdown((prev) => (prev === dropdown ? null : dropdown));
   };
 
   return (
@@ -42,13 +38,9 @@ const Navbar = ({setPage}) => {
               Home
             </a>
           </li>
-          <li
-            onClick={toggleAboutDropdown}
-            // onMouseEnter={toggleServicesDropdown}
-            // onMouseLeave={toggleServicesDropdown}
-          >
+          <li onClick={() => toggleDropdown("about")}>
             <a href="#about">About</a>
-            {aboutOpen && (
+            {openDropdown === "about" && (
               <ul className="dropdown">
                 <li>
                   <a
@@ -70,7 +62,6 @@ const Navbar = ({setPage}) => {
                     Our Cause
                   </a>
                 </li>
-
                 <li>
                   <a
                     onClick={() => {
@@ -78,34 +69,30 @@ const Navbar = ({setPage}) => {
                       navigate("/about-us");
                     }}
                   >
-                    Work with US
+                    Work with Us
                   </a>
                 </li>
               </ul>
             )}
           </li>
-          <li
-            onClick={toggleServicesDropdown}
-            // onMouseEnter={toggleServicesDropdown}
-            // onMouseLeave={toggleServicesDropdown}
-          >
+          <li onClick={() => toggleDropdown("projects")}>
             <a href="#projects">Our Projects</a>
-            {servicesOpen && (
+            {openDropdown === "projects" && (
               <ul className="dropdown">
                 <li>
-                  <a href="#ProjectWaves">Project Waves</a>
+                  <a href="/#projects">Project Waves</a>
                 </li>
                 <li>
-                  <a href="#Claws">Claws</a>
+                  <a href="/#projects">Claws</a>
                 </li>
                 <li>
-                  <a href="#JusticeforWildlife">Justice for Wildlife</a>
+                  <a href="/#projects">Justice for Wildlife</a>
                 </li>
                 <li>
-                  <a href="#WorkingAnimals">Working Animals</a>
+                  <a href="/#projects">Working Animals</a>
                 </li>
                 <li>
-                  <a href="#EcoSyNC">EcoSyNC</a>
+                  <a href="/#projects">EcoSyNC</a>
                 </li>
               </ul>
             )}
@@ -114,7 +101,7 @@ const Navbar = ({setPage}) => {
             <a
               href="#contact"
               onClick={() => {
-                setPage("AboutUs");
+                setPage("Contact");
                 navigate("/contact");
               }}
             >

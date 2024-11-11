@@ -37,14 +37,15 @@
 
   #contact-cont,
   #about-cont {
-    height: 81vh;
+    height: auto !important;
     width: 100vw;
     position: relative;
     z-index: 1;
+    /* border: 1px solid red; */
   }
   #about-cont::after {
     content: "";
-    background-image: url(../assets/images/bg.png);
+    /* background-image: url(../assets/images/bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -131,9 +132,11 @@
     position: relative;
     height: 84%;
   }
-
+  .about-us {
+    height: 100vh !important;
+  }
   #our-cause {
-    height: 100%;
+    height: auto;
     position: relative;
     /* border: 1px solid red; */
   }
@@ -151,7 +154,7 @@
     border: none;
     position: relative;
     text-align: center;
-    top: 8vh;
+    top: 10vh;
   }
   .card-container {
     top: 3vh;
@@ -167,8 +170,8 @@
     gap: 0px;
   }
   #our-cause img {
-    width: 80%;
-    height: 50%;
+    width: 20%;
+    height: 30%;
   }
   .card {
     width: 250px;
@@ -205,7 +208,7 @@
     background-color: #ecf0f1;
     z-index: 1;
     position: relative;
-    transform: translate(-40px, -40px);
+    /* transform: translate(-50px, -40px); */
     /* border: 1px solid red !important; */
   }
   .mission-content {
@@ -230,8 +233,8 @@
   }
 
   .card {
-    width: 250px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -241,15 +244,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
+    font-size: 20px;
+    /* border: 1px solid red; */
   }
   .card-title {
     background-color: #ed8f1cb6;
     z-index: 0;
     position: relative;
-    transform: translate(-15%, 60%);
+    /* transform: translate(-70px, 60px); */
     /* border: 1px solid red; */
+    margin-right: 38%;
+    margin-top: 0%;
   }
   .card-content {
     background-color: #ecf0f1;
@@ -257,7 +264,9 @@
     padding: 15px;
     line-height: 2;
     position: relative;
-    transform: translate(25%, 40px);
+    margin-left: 23%;
+    margin-top: -30%;
+    /* transform: translate(60px, 10px); */
   }
   .mission-title {
     top: 0;
@@ -273,7 +282,7 @@
   .vision-content,
   .values-content {
     background-color: white;
-    height: 380px;
+    height: 350px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -286,9 +295,12 @@
   }
   .card p,
   .card ul {
-    font-size: 14px;
+    font-size: 18px;
     color: #34495e;
     margin: 0;
+    line-height: 1.5;
+    font-family: "Source Sans Pro" !important;
+    text-align: start;
   }
   .card ul {
     list-style-type: disc;
@@ -298,11 +310,12 @@
     margin-bottom: 5px;
   }
   .card-content {
-    margin-top: -50px;
-    margin-left: 50px;
+    /* margin-top: -50px; */
+    /* margin-left: 50px; */
     position: relative;
     z-index: 1;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 290px;
   }
   .approach2 {
     padding: 20px;
@@ -318,7 +331,11 @@
   #bubble-cause {
     background-color: rgba(221, 210, 210, 0.158);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #c58a7e;
+    border-left: 1px solid #c58a7e;
+    border-right: 1px solid #c58a7e;
+    border-bottom: 1px solid #c58a7e;
+    border-radius: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,17 +347,17 @@
   }
 
   .bubble h1 {
-    font-size: 24px;
+    font-size: 46px;
     color: #2c3e50;
     text-align: center;
     margin-bottom: 15px;
   }
 
   .bubble p {
-    font-size: 14px;
+    font-size: 18px !important;
     line-height: 1.6;
     color: #34495e;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .bubble ul {
@@ -350,7 +367,7 @@
 
   .bubble ul li {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 18px !important;
     color: #34495e;
   }
 
@@ -361,25 +378,28 @@
     align-items: center;
     position: relative;
     top: 10vh;
-    height: 85%;
+    height: auto;
     /* border: 1px solid red; */
+    margin-bottom: 60px;
   }
   .stepper-container::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 1vh;
+    bottom: 10vh;
     left: 50%;
     width: 4px;
     background-color: #f39c12;
     transform: translateX(-50%);
+    /* height: 100%; */
   }
   .stepper-card {
     display: flex;
     width: 50%;
-    height: 180px !important;
+    height: 158px !important;
     justify-content: flex-end;
     position: relative;
+    /* border: 1px solid red; */
   }
   .left {
     justify-content: flex-start;
@@ -389,7 +409,8 @@
   .right {
     justify-content: flex-end;
     position: relative;
-    transform: translate(5px, -70px);
+    transform: translate(5px, -110px);
+    /* border: 1px solid black */
   }
   .step-card {
     position: relative;
@@ -407,8 +428,8 @@
     font-size: 2rem;
   }
   .step-image {
-    width: 280px !important;
-    height: 150px !important;
+    width: 250px !important;
+    height: 100px !important;
     display: block;
     align-self: center;
     border-radius: 10px;
@@ -437,6 +458,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
+    height: 80vh !important;
   }
 }
 
@@ -1191,8 +1214,8 @@
   }
 }
 @media (max-width: 768px) {
-   /* Mobile screen */
-   #approach2-cause {
+  /* Mobile screen */
+  #approach2-cause {
     top: 8vh !important;
     position: relative;
     height: 83% !important;
@@ -1200,8 +1223,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
-   
   }
 
   #our-cause {
@@ -1238,7 +1259,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px;
   }
-  
+
   #our-cause-img {
     display: none;
 
@@ -1409,8 +1430,8 @@
   .bubble-cont {
     margin: 0 auto;
     padding: 5px 36px !important;
-        /* border: 1px solid red; */
-height: 100%;
+    /* border: 1px solid red; */
+    height: 100%;
   }
 
   .bubble h1 {
@@ -1520,7 +1541,7 @@ height: 100%;
   }
 }
 #container {
-  height: 100vh;
+  height: auto !important;
   width: 100vw;
   /* border: 10px solid red; */
   overflow-x: hidden;

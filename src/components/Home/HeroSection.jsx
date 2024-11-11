@@ -6,7 +6,7 @@ const HeroSection = () => {
         <span className="one"> Science .</span> <span className="two">Action</span>
       </h2>
       <br />
-      <p>Securing species and the environment</p>
+      <p>Securing Species and the Environment</p>
     </div>
   );
 }
