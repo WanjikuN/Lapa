@@ -34,8 +34,10 @@ const steps = [
 const WorkWithUs = () => {
   return (
     <div id="our-cause">
-      <h1 id="title">Work With Us</h1>
-      <Box className="stepper-container">
+      <h1 id="title" style={{ height: "auto" }}>
+        Work With Us
+      </h1>
+      <Box className="stepper-container" >
         {steps.map((step, index) => (
           <Box
             key={index}
@@ -47,7 +49,7 @@ const WorkWithUs = () => {
               onMouseLeave={(e) => e.currentTarget.classList.remove("hovered")}
             >
               <CardContent id="content">
-                <img src={step.image}  className="step-image" />
+                <img src={step.image} className="step-image" />
                 <Typography variant="h5" className="step-title">
                   {step.title}
                 </Typography>

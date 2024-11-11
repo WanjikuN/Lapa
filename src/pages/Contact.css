@@ -1,22 +1,23 @@
 @media (min-width: 1201px) {
   /* Large screen */
   #map {
-    height: 65vh;
-    width: 55vw;
+    height: 65%;
+    width: 55%;
     margin-right: 5vw;
     /* border: 1px dashed #c58a7e; */
     position: relative;
-    top: 5vh;
     border-radius: 10px;
     border: 1px dashed #c58a7e;
+    top: 5vh;
+    
   }
 
   #form {
-    height: 65vh;
-    width: 30vw;
-    position: relative;
-    top: 15vh;
+    height:65%;
+    width: 30%;
     border-radius: 10px;
+    /* border: 1px solid red; */
+
   }
   #btn {
     padding: 10px 10px;
@@ -78,8 +79,9 @@
     height: 65vh;
     width: 30vw;
     position: relative;
-    top: 17vh;
+    /* top: 10vh; */
     border-radius: 10px;
+    /* border: 1px solid red !important; */
   }
   #btn {
     padding: 10px 10px;
@@ -100,11 +102,11 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Ipads*/
   #map {
-    height: 25vh;
+    height: 20vh;
     width: 90vw;
     /* border: 1px dashed #c58a7e; */
     position: relative;
-    top: 8vh;
+    top: 10vh;
     border-radius: 10px;
     border: 1px dashed #c58a7e;
   }
@@ -113,7 +115,7 @@
     height: 45vh;
     width: 90vw;
     position: relative;
-    /* top: 10vh; */
+    top: -4vh;
     border-radius: 10px;
     /* border: 1px solid red; */
   }
@@ -125,6 +127,7 @@
     color: #581411;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    margin-top: 1px;
   }
   #btn:hover {
     background-color: #581411 !important;
@@ -139,6 +142,11 @@
     flex-direction: column-reverse;
     /* border: 1px solid red !important; */
   }
+  .form-input {
+    /* border: 1px solid red !important; */
+    height: 30px;
+  }
+
 }
 @media (max-width: 768px) {
   /* Mobile screen */
@@ -147,7 +155,7 @@
     width: 90vw;
     /* border: 1px dashed #c58a7e; */
     position: relative;
-    top: 8vh;
+    top: 15vh;
     border-radius: 10px;
     border: 1px dashed #c58a7e;
   }
@@ -156,7 +164,7 @@
     height: 40vh;
     width: 90vw;
     position: relative;
-    /* top: 10vh; */
+    top: -5vh;
     border-radius: 10px;
     /* border: 1px solid red; */
   }
@@ -174,12 +182,18 @@
     color: #581411;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    margin-top: 1px;
+
   }
   #btn:hover {
     background-color: #581411 !important;
     cursor: pointer;
     color: #ed8e1c;
     border: none;
+  }
+  .form-input {
+    /* border: 1px solid red !important; */
+    height: 30px;
   }
   #contact-cont {
     display: flex;

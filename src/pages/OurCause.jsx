@@ -4,11 +4,20 @@ const OurCause = () => {
   return (
     <div id="our-cause">
       <h1 id="title">Our Cause</h1>
-      
-      <div className="approach2" id="approach2-cause">
-        <div className="bubble" id="bubble-cause">
+
+      <div
+        className="approach2"
+        id="approach2-cause"
+        style={{
+          // border: "1px solid red",
+          display: "flex",
+          flexDirection: "column",
+          height: "auto",
+        }}
+      >
+        <div className="bubble" id="bubble-cause" style={{ width: "96.5vw", height: "470px"}}>
           <div className="bubble-cont">
-            <h1>Combining Legal Strategies with Collaboration</h1>
+            <h1 style={{fontSize: "24px"}}>Combining Legal Strategies with Collaboration</h1>
             <p>LAPA envisions a world where:</p>
             <ul>
               <li>
@@ -34,9 +43,9 @@ const OurCause = () => {
               </li>
             </ul>
           </div>
-          <img src={cause}alt="our-cause" id="our-cause-img"/>
+          <img src={cause} alt="our-cause" id="our-cause-img" />
         </div>
-        <div className="bubble" id="bubble-cause">
+        <div className="bubble" id="bubble-cause" style={{ width: "96.5vw" }}>
           <div className="bubble-cont">
             <p>
               LAPA tackles biodiversity loss and overexploitation with a clever
