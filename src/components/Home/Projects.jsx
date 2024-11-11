@@ -33,7 +33,7 @@ const Projects = () =>{
             {/* image */}
             <img
               style={{ borderRadius: "10px", height: "80%", marginTop: "20px" }}
-              src={waves}
+              src={claws}
               alt="waves-icon"
             />
 
