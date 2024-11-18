@@ -1686,7 +1686,7 @@ h1 {
   /* border-bottom: 1px dashed #c58a7e; */
   margin-bottom: 40px;
   /* border:1px solid red; */
-  margin-top: 4px !important;
+  margin-top: 40px !important;
 }
 #projects-cards {
   /* border: 1px solid red; */
@@ -1740,7 +1740,7 @@ h1 {
   /* overflow: hidden; Hide any overflow */
   width: 79.5%; /* Full width of the container */
   /* border: 1px solid red; */
-  height: 35vh;
+  height: auto;
   position: relative;
   /* top: -290px; */
   overflow: hidden;
@@ -1755,6 +1755,8 @@ h1 {
   display: flex; /* Use flexbox for horizontal layout */
   width: calc(200%);
   animation: scroll 30s linear infinite; /* Animation for scrolling */
+    /* border: 1px solid red; */
+margin-bottom: 5vh;
 }
 
 .partners-row img {
