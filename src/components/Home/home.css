@@ -2,7 +2,7 @@
   /* Large screen */
 
   #footer-links img {
-    width: 200px;
+    width: 150px;
   }
   .dropdown {
     display: flex;
@@ -1349,32 +1349,52 @@
   z-index: 1;
   flex-direction: column;
   line-height: 0.5;
+  
   /* border: 1px solid red; */
 }
+
+#hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.267); /* Black overlay with 50% opacity */
+  z-index: 0; /* Places the overlay behind the content */
+}
+
+#hero-section > * {
+  position: relative;
+  z-index: 1; /* Ensures the content stays above the overlay */
+}
+
 .three {
-  color: #581411;
+  color: white;
 }
 .one {
   color: #ed8e1c;
 }
 .two {
-  color: #581411;
+  color: white;
 }
 #hero-section h2 {
-  position: absolute;
-  top: 8%;
+    /* border: 1px solid red; */
 
+  /* position: absolute; */
+  /* top: 8%; */
+margin-top: -50px;
   color: white;
   font-family: "Source_sans_pro";
   font-size: 46px;
 }
 #hero-section p {
   font-size: 24px !important;
-  color: #ed8e1c;
+  color: white;
   font-weight: bold;
   font-family: "Source Sans Pro";
-  position: absolute;
-  top: 20%;
+  /* position: absolute; */
+  /* top: 20%; */
 }
 
 #hero-section h2 {
@@ -1409,11 +1429,12 @@
 /* Logo styles */
 .logo {
   width: 50%;
+  /* border: 1px solid red; */
 }
 #navbar .logo img {
-  height: 80px;
+  height: 60px;
   width: auto;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* Navigation links */
@@ -1441,13 +1462,13 @@
 #navbar .nav-links a {
   text-decoration: none;
   color: #581411;
-  font-size: 20px ;
+  font-size: 20px;
   font-weight: bold;
   /* border: 1px solid red; */
 }
-.dropdown li a{
+.dropdown li a {
   font-size: 18px !important;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 }
 #navbar .nav-links a:hover {
   color: #ed8e1c;
@@ -1551,7 +1572,7 @@
 }
 h1 {
   margin: 0;
-  font-size: 46px ;
+  font-size: 46px;
   font-family: "Source Sans Pro";
   border-bottom: 1px dashed #c58a7e;
   text-align: center !important;
@@ -1685,7 +1706,7 @@ h1 {
   /* border-bottom: 1px dashed #c58a7e; */
   margin-bottom: 40px;
   /* border:1px solid red; */
-  margin-top: 4px !important;
+  margin-top: 40px !important;
 }
 #projects-cards {
   /* border: 1px solid red; */
@@ -1697,7 +1718,8 @@ h1 {
 }
 .projects-card {
   /* border: 1px solid red; */
-  height: 60vh;
+  min-height: 67vh;
+  height: auto;
   width: 18%;
   background-color: white;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.404); */
@@ -1739,7 +1761,7 @@ h1 {
   /* overflow: hidden; Hide any overflow */
   width: 79.5%; /* Full width of the container */
   /* border: 1px solid red; */
-  height: 35vh;
+  height: auto;
   position: relative;
   /* top: -290px; */
   overflow: hidden;
@@ -1754,6 +1776,8 @@ h1 {
   display: flex; /* Use flexbox for horizontal layout */
   width: calc(200%);
   animation: scroll 30s linear infinite; /* Animation for scrolling */
+    /* border: 1px solid red; */
+margin-bottom: 5vh;
 }
 
 .partners-row img {
@@ -1782,7 +1806,11 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  /* border: 10px solid black; */
+background: 
+  linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.5)),
+  url(../../assets/images/bg.png) no-repeat center center;
+background-size: cover;
+  /* border: 1px solid black; */
   /* position: relative; */
   /* top: -290px; */
   background-image: url(../../assets/images/bg.png);
@@ -1799,10 +1827,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
 }
 #news-letter p {
   font-size: 40px !important;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #581411;
   font-family: "Source Sans Pro";
   font-weight: 900;
@@ -1854,21 +1883,22 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 60%;
+  height: auto;
   margin: 0;
 }
 #footer-links {
   /* border: 1px solid red; */
-  /* height: 100%; */
-  position: relative;
+  /* height: 0%; */
+  /* position: relative; */
   /* top: -150px; */
   width: 89vw;
   display: flex;
   justify-content: space-between;
+  line-height: 0.2;
 }
 #footer-links p {
   color: #581411;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-size: 20px;
   font-weight: bold;
 }

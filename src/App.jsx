@@ -8,6 +8,8 @@ import OurCause from "./pages/OurCause";
 import WorkWithUs from "./pages/WorkWithUs";
 import { useState } from "react";
 import Contact from "./pages/Contact";
+import Projects from "./components/Home/Projects";
+import OurProjects from "./pages/Projects";
 
 function App() {
     const [page, setPage] = useState('home');
@@ -18,6 +20,10 @@ console.log("Page",page)
       <Route
         path="/about-us"
         element={<AboutUs setPage={setPage} page={page} />}
+      />
+      <Route
+        path="/projects"
+        element={<OurProjects setPage={setPage} page={page} />}
       />
       <Route
         path="/contact"
