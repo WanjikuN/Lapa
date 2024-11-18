@@ -1698,7 +1698,8 @@ h1 {
 }
 .projects-card {
   /* border: 1px solid red; */
-  height: 60vh;
+  min-height: 67vh;
+  height: auto;
   width: 18%;
   background-color: white;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.404); */
