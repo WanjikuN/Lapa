@@ -1,7 +1,7 @@
 #hero-projects {
   /* top: 5vh; */
   /* border: 1px solid red; */
-  height: 90vh;
+  height: 100vh;
   /* background-image:  url(../../assets/images/LandingPage2.jpg); */
   background: linear-gradient(to top, #ffffff57, rgba(255, 255, 255, 0)),
     url(../../assets/images/LandingPage2.jpg) no-repeat center;
@@ -121,8 +121,10 @@
 }
 #project-desc {
   /* border: 1px solid red; */
+  max-height: 87vh;
   width: 60%;
   color: black;
+  overflow-y: scroll;
 }
 .project-approach {
   display: flex;

@@ -1872,13 +1872,13 @@ background-size: cover;
   border-color: #80bdff;
 }
 .footer-copyright {
-  color: #c58a7e;
+  color: white;
   font-size: 20px;
   font-family: "Source_sans_pro";
   /* border: 1px solid red; */
 }
 #footer {
-  /* border: 1px solid red; */
+  /* border: 1px solid red !important; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1897,7 +1897,7 @@ background-size: cover;
   line-height: 0.2;
 }
 #footer-links p {
-  color: #581411;
+  color: white;
   font-family: "Source Sans Pro";
   font-size: 20px;
   font-weight: bold;
@@ -1911,7 +1911,10 @@ background-size: cover;
 
 #social-links a {
   font-size: 30px;
-  color: #581411;
+  color: rgba(255, 255, 255, 0.721) !important;
+  font-weight: 200;
+
+  /* color: #581411; */
   text-decoration: none;
 }
 
@@ -1923,10 +1926,14 @@ background-size: cover;
   height: 30px;
 }
 h6 {
-  color: #581411;
+  /* color: white; */
   font-size: 18px;
   /* font-family: "Source Sans Pro" !important; */
-  font-weight: 400;
+  font-weight: 200;
+}
+#contacts > *{
+  color: white !important;
+  /* border: 1px solid red; */
 }
 .dropdown a:hover {
   color: #ed8e1c !important;
