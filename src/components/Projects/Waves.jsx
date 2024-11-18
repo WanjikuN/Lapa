@@ -1,10 +1,15 @@
-const Waves = () => {
+import waves from "./../../assets/images/waves.jpg";
+
+const Waves = ({ page }) => {
   return (
-    <>
-      <h2 style={{ color: "black", position: "relative", top: "10vh" }}>
-        Waves
-      </h2>
-    </>
+    <div id="projects-content">
+      <div id="project-img">
+        {/* image/Name */}
+        <img src={waves} alt="claws-icon" />
+        <p>{page}</p>
+      </div>
+      <div id="project-desc">{/* desc */}</div>
+    </div>
   );
 };
 export default Waves;

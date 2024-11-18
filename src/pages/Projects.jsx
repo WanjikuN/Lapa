@@ -9,66 +9,66 @@ import Justice from "../components/Projects/Justice";
 import Waves from "../components/Projects/Waves";
 import WorkingAnimals from "../components/Projects/Working";
 import { Button } from "@mui/material";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const OurProjects = ({ setPage, page }) => {
   const navigate = useNavigate();
   const renderContent = () => {
     switch (page) {
       case "Claws":
-        return <Claws />;
+        return <Claws page={page} />;
       case "EcoSyNC":
-        return <Ecosync />;
+        return <Ecosync page={page} />;
       case "Justice for Wildlife":
-        return <Justice />;
+        return <Justice page={page} />;
       case "Waves":
-        return <Waves />;
+        return <Waves page={page} />;
       case "Working Animals":
-        return <WorkingAnimals />;
+        return <WorkingAnimals page={page} />;
       default:
-        return <Claws />;
+        return <Claws page={page} />;
     }
   };
-const projectDetails = () =>{
-  switch(page){
-    case "Claws":
-      return (
-        <p>
-          Community Legal Aid Workers (CLAWS) provide legal assistance to
-          communities affected by human-wildlife conflict
-        </p>
-      );
-    case "EcoSyNC":
-      return (
-        <p>
-          We implement Kenya’s first independent certification program that
-          verifies the eco - sustainability of farm production.{" "}
-        </p>
-      );
-    case "Justice for Wildlife":
-      return (
-        <p>
-          We leverage laws and technology to empower law enforcement and disrupt
-          criminal networks that trade in wildlife.
-        </p>
-      );
-    case "Waves":
-      return (
-        <p>
-          Project WAVES is a campaign for the conservation of marine species and
-          protection of their habitats.
-        </p>
-      );
-    case "Working Animals":
-      return (
-        <p>
-          We advocate for strengthened legal protections for working animals
-          from cruelty and over exploitation.
-        </p>
-      );
-    default:
-  }
-}
+  const projectDetails = () => {
+    switch (page) {
+      case "Claws":
+        return (
+          <p>
+            Community Legal Aid Workers (CLAWS) provide legal assistance to
+            communities affected by human-wildlife conflict
+          </p>
+        );
+      case "EcoSyNC":
+        return (
+          <p>
+            We implement Kenya’s first independent certification program that
+            verifies the eco - sustainability of farm production.{" "}
+          </p>
+        );
+      case "Justice for Wildlife":
+        return (
+          <p>
+            We leverage laws and technology to empower law enforcement and
+            disrupt criminal networks that trade in wildlife.
+          </p>
+        );
+      case "Waves":
+        return (
+          <p>
+            Project WAVES is a campaign for the conservation of marine species
+            and protection of their habitats.
+          </p>
+        );
+      case "Working Animals":
+        return (
+          <p>
+            We advocate for strengthened legal protections for working animals
+            from cruelty and over exploitation.
+          </p>
+        );
+      default:
+    }
+  };
   return (
     <div id="container">
       <Navbar setPage={setPage} />
@@ -84,7 +84,12 @@ const projectDetails = () =>{
         <Button
           className="project-button"
           variant="contained"
-          onClick={() => navigate("#projects-cont")}
+          onClick={() => {
+            // Scroll to the element with id "projects-cont"
+            document
+              .getElementById("projects-cont")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
           sx={{
             backgroundColor: "#581411",
             fontFamily: "Source Sans Pro",

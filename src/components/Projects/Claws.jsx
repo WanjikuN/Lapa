@@ -1,7 +1,15 @@
-const Claws = () => {
+import claws from "./../../assets/images/claws.png";
+const Claws = ({page}) => {
   return (
     <div id="projects-content">
-      <h2 style={{ color: "black" }}>Claws</h2>
+      <div id="project-img">
+        {/* image/Name */}
+        <img src={claws} alt="claws-icon" />
+        <p>{page}</p>
+      </div>
+      <div id="project-desc">
+        {/* desc */}
+      </div>
     </div>
   );
 };
