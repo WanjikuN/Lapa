@@ -3,13 +3,21 @@ import claws from "./../../assets/images/claws.png";
 import justice from "./../../assets/images/justice.jpg";
 import working from "./../../assets/images/workinganimals.jpg";
 import eco from "./../../assets/images/ecosync.jpg";
+import { useNavigate } from "react-router-dom";
 
-const Projects = () =>{
+const Projects = ({ setPage }) => {
+  const navigate = useNavigate();
   return (
     <div id="projects">
       <h2>Current Projects</h2>
       <div id="projects-cards">
-        <div className="projects-card">
+        <div
+          className="projects-card"
+          onClick={() => {
+            setPage("Waves");
+            navigate("./projects");
+          }}
+        >
           <div className="approach-card-one">
             {/* image */}
             <img
@@ -28,7 +36,13 @@ const Projects = () =>{
           </p>
         </div>
 
-        <div className="projects-card">
+        <div
+          className="projects-card"
+          onClick={() => {
+            setPage("Claws");
+            navigate("./projects");
+          }}
+        >
           <div className="approach-card-one">
             {/* image */}
             <img
@@ -47,7 +61,13 @@ const Projects = () =>{
             communities affected by human-wildlife conflict
           </p>
         </div>
-        <div className="projects-card">
+        <div
+          className="projects-card"
+          onClick={() => {
+            setPage("Justice for Wildlife");
+            navigate("./projects");
+          }}
+        >
           <div className="approach-card-one">
             {/* image */}
             <img
@@ -66,7 +86,13 @@ const Projects = () =>{
             disrupt criminal networks that trade in wildlife.
           </p>
         </div>
-        <div className="projects-card">
+        <div
+          className="projects-card"
+          onClick={() => {
+            setPage("Working Animals");
+            navigate("./projects");
+          }}
+        >
           <div className="approach-card-one">
             {/* image */}
             <img
@@ -85,7 +111,13 @@ const Projects = () =>{
             from cruelty and over exploitation.
           </p>
         </div>
-        <div className="projects-card">
+        <div
+          className="projects-card"
+          onClick={() => {
+            setPage("EcoSync");
+            navigate("./projects");
+          }}
+        >
           <div className="approach-card-one">
             {/* image */}
             <img
@@ -107,5 +139,5 @@ const Projects = () =>{
       </div>
     </div>
   );
-}
+};
 export default Projects;
