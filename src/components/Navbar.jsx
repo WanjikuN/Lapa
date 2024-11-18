@@ -93,19 +93,19 @@ const Navbar = ({ setPage }) => {
                 </li>
                 <li>
                   <a  onClick={() => {
-                      setPage("Justice");
+                      setPage("Justice for Wildlife");
                       navigate("/projects");
                     }}>Justice for Wildlife</a>
                 </li>
                 <li>
                   <a  onClick={() => {
-                      setPage("Working");
+                      setPage("Working Animals");
                       navigate("/projects");
                     }}>Working Animals</a>
                 </li>
                 <li>
                   <a  onClick={() => {
-                      setPage("Ecosync");
+                      setPage("EcoSyNC");
                       navigate("/projects");
                     }}>EcoSyNC</a>
                 </li>
