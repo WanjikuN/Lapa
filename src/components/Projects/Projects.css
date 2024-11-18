@@ -19,7 +19,7 @@
   line-height: 1.5;
 }
 #projects-cont{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background-color: #f4f4f6;
     height: auto;
 
@@ -75,4 +75,7 @@ font-size: 30px !important;
 .project-button:hover{
 background-color: #ed8e1c;
 color: #581411;
+}
+#projects-content{
+  border: 1px solid red;
 }
