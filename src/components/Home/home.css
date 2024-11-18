@@ -1409,11 +1409,13 @@
 /* Logo styles */
 .logo {
   width: 50%;
+    /* border: 1px solid red; */
+
 }
 #navbar .logo img {
-  height: 80px;
+  height: 60px;
   width: auto;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* Navigation links */
