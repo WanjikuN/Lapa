@@ -17,7 +17,7 @@ const Home = ({setPage}) =>{
       <HeroSection />
       
       <Approach2 />
-      <Projects />
+      <Projects setPage={setPage}/>
       <OurPartners />
       <FooterHome />
     </div>
