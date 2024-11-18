@@ -1409,8 +1409,7 @@
 /* Logo styles */
 .logo {
   width: 50%;
-    /* border: 1px solid red; */
-
+  /* border: 1px solid red; */
 }
 #navbar .logo img {
   height: 60px;
@@ -1443,13 +1442,13 @@
 #navbar .nav-links a {
   text-decoration: none;
   color: #581411;
-  font-size: 20px ;
+  font-size: 20px;
   font-weight: bold;
   /* border: 1px solid red; */
 }
-.dropdown li a{
+.dropdown li a {
   font-size: 18px !important;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 }
 #navbar .nav-links a:hover {
   color: #ed8e1c;
@@ -1553,7 +1552,7 @@
 }
 h1 {
   margin: 0;
-  font-size: 46px ;
+  font-size: 46px;
   font-family: "Source Sans Pro";
   border-bottom: 1px dashed #c58a7e;
   text-align: center !important;
@@ -1784,6 +1783,10 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+background: 
+  linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.5)),
+  url(../../assets/images/bg.png) no-repeat center center;
+background-size: cover;
   /* border: 1px solid black; */
   /* position: relative; */
   /* top: -290px; */
@@ -1868,11 +1871,11 @@ h1 {
   width: 89vw;
   display: flex;
   justify-content: space-between;
-  line-height: 1;
+  line-height: 0.2;
 }
 #footer-links p {
   color: #581411;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-size: 20px;
   font-weight: bold;
 }
